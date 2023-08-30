@@ -1,0 +1,3 @@
+function mp3stream --wraps=cvlc\ -vvv\ pulse://alsa_output.pci-0000_00_1b.0.analog-surround-51.monitor\ --sout\ \'\#transcode\{acodec=mpga,ab=128,channels=2\}:standard\{access=http,dst=192.168.1.73:8080/pc.mp3\}\' --description alias\ mp3stream\ cvlc\ -vvv\ pulse://alsa_output.pci-0000_00_1b.0.analog-surround-51.monitor\ --sout\ \'\#transcode\{acodec=mpga,ab=128,channels=2\}:standard\{access=http,dst=192.168.1.73:8080/pc.mp3\}\'
+  cvlc -vvv pulse://alsa_output.pci-0000_00_1b.0.analog-surround-51.monitor --sout '#transcode{acodec=mpga,ab=128,channels=2}:standard{access=http,dst=192.168.1.73:8080/pc.mp3}' $argv; 
+end
