@@ -1,40 +1,14 @@
 format = """
-[░▒▓](#b37202)\
-$username\
-$os\
-[](bg:#b37262 fg:#96928f)\
-$status\
-$localip\
-$hostname\
-$memory_usage\
-$time\
-$directory\
-$container\
-[](fg:#b37202)\
-$git_status\
-$git_branch\
-$git_commit\
-$git_state\
-$git_metrics\
-$shlvl\
-$shell\
-$sudo\
-$package\
-$ruby\
-$lua\
-$c\
-$rust\
-$perl\
-$python\
-$php\
-$java\
-$cmd_duration\
-$character\
+$git_status$git_branch$git_commit$git_state$git_metrics$package$ruby$lua$c$rust$perl$python$php$java
+[░▒▓](#b37202)$username$os[](bg:#b37202 fg:#875d14)$status$localip$hostname$memory_usage$time$directory$container[](fg:#b37202)$shlvl$shell$sudo$cmd_duration$character
 """
 right_format = """
 
 """
+#add_newline = false
 #continuation_prompt = '▶▶ '
+#[line_break]
+#disabled = true
 
 [username]
 style_user = 'bg:#b37202 bold black'
@@ -49,14 +23,15 @@ symbol = '💢'
 disabled = false
 
 [cmd_duration]
+format = ' [$duration]($style) '	
 min_time = 4
 show_milliseconds = true
 disabled = false
 style = "bold italic yellow"
 
 [shell]
-fish_indicator = '🐟'
-bash_indicator = '☠️ '
+fish_indicator = ' 🐟'
+bash_indicator = ' ☠️ '
 powershell_indicator = '_'
 unknown_indicator = 'mystery shell'
 style = 'cyan'
@@ -84,11 +59,12 @@ format = "[:$path]($style)[$read_only]($read_only_style)"
 truncation_length = 100
 truncate_to_repo = false
 truncation_symbol = "…/"
-#read_only = "󰌾"
+read_only = "🚧"
+home_symbol = "🏠"
 
 [character]
-success_symbol = '[❯](bold green) '
-error_symbol = '[❯](bold red) '
+success_symbol = '[❱](bold white)[❱](bold cyan)[❱](bold green)'
+error_symbol = '[❯](bold red)[❯](bold red)[❯](bold red)'
 
 [aws]
 symbol = "  "
@@ -97,7 +73,7 @@ symbol = "  "
 symbol = "🦬 "
 
 [bun]
-format = 'via [🍔 $version](bold green) '
+format = ' [🍔 $version](bold green) '
 
 [c]
 symbol = ""
@@ -159,30 +135,16 @@ truncation_symbol = ''
 [git_branch]
 symbol = '🌱 '
 truncation_length = 4
-format = 'on [$symbol$branch(:$remote_branch)]($style) '
+format = '[$symbol$branch(:$remote_branch)]($style) '
 #truncation_symbol = ''
 #only_attached = false
-#branch = 'master'
-#ignore_branches = ['master', 'main']
-remote_name = "https://gitlab.com/Funkin/Mofo"
-remote_branch = "Mofo"
+ignore_branches = ['master', 'main']
 style = 'bold purple'
-disabled = true
+disabled = false
 
 [git_state]
-format = '([\[$all_status$ahead_behind\]]($style))'
-#ahead = "🏎💨"
-#behind = "⇣${count}"
-#diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-#renamed = "r"
-#deleted = "🗑"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "cyan"
-#conflicted = "​🏳"
-#untracked = "​🤷"
-#modified = "​📝"
-#staged = '[++\($count\)](green)'
-#stashed = "📦"
-#up_to_date = '✓'
 rebase = 'REBASING'
 merge = 'MERGING'
 revert = 'REVERTING'
@@ -200,26 +162,26 @@ only_detached = true
 disabled = false
 
 [git_metrics]
-added_style = 	'bold green'
-deleted_style = 'bold red'
+added_style = 	'green'
+deleted_style = 'dimmed red'
 only_nonzero_diffs = true
 format = '([+$added]($added_style) )([-$deleted]($deleted_style) )'
 disabled = true
-ignore_submodules = false
+ignore_submodules = true
 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
-conflicted = '🏳${count}'
-ahead = '🏎💨⇡${count}'
-behind = '😰⇣${count}'
-diverged = '😵⇕⇡${ahead_count}⇣${behind_count}'
-up_to_date = '✓'
-untracked = '🤷${count}'
-stashed = '📦${count}'
-modified = '📝${count}'
+format = '([\[$ahead_behind\]]($style))'
+conflicted = '🏳'
+ahead = '🏎💨⇡'
+behind = '😰⇣'
+diverged = '😵⇕⇡'
+up_to_date = '✔️ '
+untracked = '❓️ '
+stashed = '📦'
+modified = '📝'
 staged = '[++\($count\)](green)'
-renamed = '👅${count}'
-deleted = '🗑${count}'
+renamed = '👅'
+deleted = '🗑️ '
 #typedchanged = ''
 style = 'bold red'
 ignore_submodules = false
@@ -358,11 +320,14 @@ Unknown = "❓ "
 Windows = "🪟 "
 
 [package]
-symbol = "󰏗 "
-format = 'via [🎁 $version](208 bold) '
+symbol = " 📦"
+format = '[$symbol$version]($style)'
+version_format = 'v${raw}'
+style = 'bold 208'
+disabled = false
 
 [perl]
-format = '[🔮 $version]($style) '
+format = '[🔮$version]($style) '
 version_format = 	'v${raw}'
 detect_extensions = ['pl', 'pm', 'pod']
 detect_files = ['Makefile.PL', 'Build.PL', 'cpanfile', 'cpanfile.snapshot', 'META.json', 'META.yml', '.perl-version']
@@ -385,6 +350,7 @@ symbol = " "
 [python]
 symbol = '⚕️ '
 #pyenv_version_name = true
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'	
 python_binary = ['./venv/bin/python', 'python', 'python3', 'python2']
 version_format = 'v${raw}'
 style = 'bold yellow'
@@ -409,7 +375,7 @@ style = 'bold red'
 [rust]
 symbol = "🦀 "
 version_format = 'v${raw}'
-format = '[⚙️ $version](red bold)'
+format = '[ ⚙️ $version](red bold)'
 detect_extensions = ['rs']
 detect_files = ['Cargo.toml']
 style = 'red'
