@@ -6,5 +6,12 @@ eval (thefuck --alias | tr '\n' ';')
 
 starship init fish | source
 mach
+function fish_right_prompt 
+   set_color green 
+ echo -e \n
+command echo (playerctl metadata --format {{ title }}🎶)
+ end
 end
 
+
+#

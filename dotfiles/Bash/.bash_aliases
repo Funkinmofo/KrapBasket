@@ -1,8 +1,19 @@
 alias nowplaying='playerctl metadata --format "Now playing: {{ artist }} - {{ title }}" '
 alias reload='source ~/.bashrc && source ~/.bash_aliases'
 alias myip='curl ipinfo.io/ip'
-alias lt='ls --human-readable --size -1 -S --classify'
-alias lc='ls --color=auto'
+
+#alias lt='ls --human-readable --size -1 -S --classify'
+#alias ls='ls -ahl --color=auto'
+#alias ll='ls -alF'
+#alias la='ls -A'
+
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+
+alias l='exa -aFx --color=always --group-directories-first'
+#alias lc='ls --color=auto'
 alias dir='ls'
 alias copy='cp'
 alias move='mv'
@@ -41,3 +52,4 @@ alias lsong='audacious --rew'
 alias nwp='nowplaying'
 alias mach='/home/myrrdin/macchina/target/release/./macchina'
 alias scannet='sudo iftop -n -b -p -P -B'
+alias wipegame='cd /home/myrrdin/Apps/wipeout-rewrite-master'

@@ -9,7 +9,6 @@ right_format = """
 #continuation_prompt = '▶▶ '
 #[line_break]
 #disabled = true
-
 [username]
 style_user = 'bg:#b37202 bold black'
 style_root = 'bg:#b37202 bold red'
@@ -56,11 +55,13 @@ format = '[⌚️$time ]($style)'
 [directory]
 style = "bg:#b37202 bold yellow"
 format = "[:$path]($style)[$read_only]($read_only_style)"
-truncation_length = 100
-truncate_to_repo = false
-truncation_symbol = "…/"
+truncation_length = 3
+truncate_to_repo = true
+truncation_symbol = "🛑"
 read_only = "🚧"
 home_symbol = "🏠"
+use_os_path_sep = true
+fish_style_pwd_dir_length = 1
 
 [character]
 success_symbol = '[❱](bold white)[❱](bold cyan)[❱](bold green)'
@@ -130,7 +131,7 @@ style = 'bold green'
 [fossil_branch]
 symbol = '🦎 '
 truncation_length = 4
-truncation_symbol = ''
+truncation_symbol = '🛑'
 
 [git_branch]
 symbol = '🌱 '
