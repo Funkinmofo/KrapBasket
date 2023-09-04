@@ -18,7 +18,7 @@ alias ports='sudo netstat -tulanp > /home/myrrdin/Documents/Ports.txt'
 alias scannet='sudo iftop -n -b -p -P -B'
 
 ###Directory Aliases
-### uncomment only is not using exa
+### uncomment only if not using exa
 #alias lt='ls --human-readable --size -1 -S --classify'
 #alias ls='ls -ahl --color=auto'
 #alias ll='ls -alF'
