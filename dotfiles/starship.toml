@@ -18,11 +18,12 @@ show_always = true
 
 [sudo]
 style = 'bold green'
+format = '[$symbol]($style)'
 symbol = '💢'
 disabled = false
 
 [cmd_duration]
-format = ' [$duration]($style) '	
+format = ' [$duration]($style)'	
 min_time = 4
 show_milliseconds = true
 disabled = false
@@ -65,7 +66,7 @@ fish_style_pwd_dir_length = 1
 
 [character]
 success_symbol = '[❱](bold white)[❱](bold cyan)[❱](bold green)'
-error_symbol = '[❯](bold red)[❯](bold red)[❯](bold red)'
+error_symbol = '[❯](bold red)[💩](bold red)[❯](bold red)'
 
 [aws]
 symbol = "  "
@@ -301,7 +302,7 @@ Macos = "🍎 "
 Manjaro = "🥭 "
 Mariner = "🌊 "
 MidnightBSD = "🌘 "
-Mint = "🌿 "
+Mint = "🌿"
 NetBSD = "🚩 "
 NixOS = "❄️ "
 OpenBSD = "🐡 "
