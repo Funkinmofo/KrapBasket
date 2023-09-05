@@ -10,7 +10,7 @@ command error
 
 currently playing song
 
-![zsh](https://github.com/Funkinmofo/KrapBasket/assets/143419294/bae99c7f-2e8e-437e-a19f-7ab5a13fbd55)
+![zshell](https://github.com/Funkinmofo/KrapBasket/assets/143419294/bd6c19a2-3cda-45c2-8a9d-26ff84b2163b)
 
 zsh
 
