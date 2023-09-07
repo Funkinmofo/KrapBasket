@@ -19,8 +19,9 @@ hide_delimiters = true
 visible         = true
 
 [box]
-border          = "plain"
+border          = "double"
 visible         = true
+
 
 [box.inner_margin]
 x               = 1
@@ -40,7 +41,7 @@ terminal        = "Terminal"
 shell           = "Shell"
 uptime          = "Uptime"
 memory          = "Memory"
-#machine         = "Machine"
+machine         = "Machine"
 backlight       = "Brightness"
 resolution      = "Resolution"
 cpu_load        = "CPU Load"
