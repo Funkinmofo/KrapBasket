@@ -13,7 +13,9 @@ currently playing song
 ![zshell](https://github.com/Funkinmofo/KrapBasket/assets/143419294/bd6c19a2-3cda-45c2-8a9d-26ff84b2163b)
 
 zsh
+![nexus](https://github.com/Funkinmofo/KrapBasket/assets/143419294/62ae34e7-b087-41ee-aa4b-f99ff9a3f61c)
 
+Nexus 7 (2012) running Ubuntu with Fish shell
 
 # KrapBasket
 
