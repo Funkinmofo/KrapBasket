@@ -1,5 +1,6 @@
 <h3>Addons Used:</h3>
 <hr>
+
 Fish spark -
 https://github.com/jorgebucaran/spark.fish
 
@@ -51,8 +52,12 @@ https://gnunn1.github.io/tilix-web/
 glances -
 https://nicolargo.github.io/glances/
 
+Lolcat -
+https://www.tecmint.com/lolcat-color-output-linux-terminal/
+
 <hr>
-<h2>Fish pics</h2>
+
+<h2>Fish</h2>
 
 ![prompt](https://github.com/Funkinmofo/KrapBasket/assets/143419294/eed72d3a-80a9-44de-a170-25a5ec522f65) starship read only
 
@@ -61,7 +66,8 @@ https://nicolargo.github.io/glances/
 ![promptsong](https://github.com/Funkinmofo/KrapBasket/assets/143419294/df088fac-67ad-4c58-8d9c-f0d71afd8913) currently playing song
 
 <hr>
-<h2>zsh pics</h2>
+
+<h2>zsh</h2>
 
 ![zshell](https://github.com/Funkinmofo/KrapBasket/assets/143419294/bd6c19a2-3cda-45c2-8a9d-26ff84b2163b) zsh with a modified powerlevel9k setup
 
@@ -70,6 +76,7 @@ https://nicolargo.github.io/glances/
 ![nexus](https://github.com/Funkinmofo/KrapBasket/assets/143419294/ba7312cd-79f6-4822-a012-732e27b9c5cd) Nexus 7 (2012) running Ubuntu with Fish shell
 
 <hr>
+
 # KrapBasket
 
 updates
