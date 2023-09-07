@@ -54,7 +54,7 @@ theme = 'Hydrogen'
 #   - DiskSpace
 # Example:
 #   show = ["Battery", "Memory", ...]
-show = ['OperatingSystem', 'Distribution', 'Kernel','DesktopEnvironment', 'WindowManager', 'Shell', 'Terminal', 'Host', 'Uptime', 'Processor', 'ProcessorLoad', 'Memory', 'DiskSpace']
+show = ['OperatingSystem','Machine', 'Distribution', 'Kernel','Host','LocalIP','DesktopEnvironment', 'WindowManager', 'Shell', 'Terminal','Uptime','Packages','GPU','Resolution','Processor', 'ProcessorLoad', 'Memory', 'DiskSpace']
 
 
 
