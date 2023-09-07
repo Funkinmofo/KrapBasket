@@ -1,3 +1,68 @@
+##Addons Used:
+
+Fish spark -
+https://github.com/jorgebucaran/spark.fish
+
+exa -
+https://the.exa.website/
+
+playerctl -
+https://github.com/altdesktop/playerctl
+
+starship prompt -
+https://starship.rs/
+
+powerlevel9000 - 
+https://github.com/Powerlevel9k/powerlevel9k
+
+ohmyzsh - 
+https://ohmyz.sh/
+
+musikcube - 
+https://github.com/clangen/musikcube/releases
+
+sashimi prompt - (needed to take parts for my nexus tablet version of fish)
+https://github.com/isacikgoz/sashimi/blob/master/fish_prompt.fish
+
+timeshift autosnap -
+https://github.com/wmutschl/timeshift-autosnap-apt
+
+macchina -
+https://github.com/Macchina-CLI/macchina
+
+neofetch -
+https://github.com/dylanaraps/neofetch
+
+fish -
+https://github.com/fish-shell/fish-shell
+
+glava
+https://github.com/jarcode-foss/glava
+
+thefuck -
+https://github.com/nvbn/thefuck
+
+guake - 
+https://github.com/Guake/guake/releases
+
+tilix -
+https://gnunn1.github.io/tilix-web/
+
+glances -
+https://nicolargo.github.io/glances/
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
 ![prompt](https://github.com/Funkinmofo/KrapBasket/assets/143419294/eed72d3a-80a9-44de-a170-25a5ec522f65) starship read only
 
 ![prompterror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/e70ef3d8-c528-436b-884d-662a3ce590b4) command error
