@@ -13,6 +13,7 @@ currently playing song
 ![zshell](https://github.com/Funkinmofo/KrapBasket/assets/143419294/bd6c19a2-3cda-45c2-8a9d-26ff84b2163b)
 
 zsh
+
 ![nexus](https://github.com/Funkinmofo/KrapBasket/assets/143419294/ba7312cd-79f6-4822-a012-732e27b9c5cd)
 
 
