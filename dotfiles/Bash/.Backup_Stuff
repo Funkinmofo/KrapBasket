@@ -20,6 +20,7 @@ rsync -a -u /home/myrrdin/.config/starship.toml /media/myrrdin/Storage/Backup/My
 rsync -a -u /home/myrrdin/.config/fish /media/myrrdin/Storage/Fish
 rsync -a -u /home/myrrdin/.config/macchina/macchina.toml /media/myrrdin/Storage/Backup/MyConfigs
 rsync -a -u /home/myrrdin/.config/macchina/themes/Hydrogen.toml /media/myrrdin/Storage/Backup/MyConfigs
+rsync -a -u /home/myrrdin/.zshrc /media/myrrdin/Storage/zsh/
 
 date > /media/myrrdin/Storage/BKUPDone.txt
 

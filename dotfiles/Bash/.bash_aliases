@@ -1,5 +1,5 @@
 ###Media Aliases
-alias nowplaying='playerctl metadata --format "Now playing: {{ artist }} - {{ title }}" '
+alias nowplaying='playerctl metadata --format "Now playing: {{ artist }} - {{ title }}" | lolcat'
 alias mp3stream="cvlc -vvv pulse://alsa_output.pci-0000_00_1b.0.analog-surround-51.monitor --sout \
 '#transcode{acodec=mpga,ab=128,channels=2}:standard{access=http,dst=192.168.1.73:8080/pc.mp3}'"
 alias glavdesk='glava --desktop'
@@ -59,6 +59,12 @@ alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
+###github
+alias gstat='git status -u no'
+alias gcomm='git commit -m'
+alias gits='ssh -T git@github.com'
+alias gpush='git push'
+
 ###convenience items
 alias metasploit='cd /opt/metasploit-framework/bin/'
 alias console='sudo msfconsole'
@@ -67,4 +73,7 @@ alias aptd='sudo SKIP_AUTOSNAP= apt update'
 alias aptg='sudo SKIP_AUTOSNAP= apt upgrade'
 alias aptr='sudo SKIP_AUTOSNAP= apt remove'
 alias wipegame='cd /home/myrrdin/Apps/wipeout-rewrite-master'
+alias skip='SKIP_AUTOSNAP='
+alias clm='clear && nf'
+alias clp='clear && nf && nwp'
 

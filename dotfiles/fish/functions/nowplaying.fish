@@ -1,3 +1,3 @@
-function nowplaying --wraps='playerctl metadata --format "Now playing: {{ artist }} - {{ title }}"' --description 'playerctl metadata --format "Now playing: {{ artist }} - {{ title }}"'
-  playerctl metadata --format "Now playing: {{ artist }} - {{ title }}" $argv; 
+function nowplaying --wraps='playerctl metadata --format "Now playing: {{ artist }} - {{ title }}" | lolcat' --description 'playerctl metadata --format "Now playing: {{ artist }} - {{ title }}" | lolcat'
+  playerctl metadata --format "Now playing: {{ artist }} - {{ title }}" | lolcat $argv; 
 end
