@@ -75,5 +75,6 @@ alias aptr='sudo SKIP_AUTOSNAP= apt remove'
 alias wipegame='cd /home/myrrdin/Apps/wipeout-rewrite-master'
 alias skip='SKIP_AUTOSNAP='
 alias clm='clear && nf'
-alias clp='clear && nf && nwp'
+alias clp='clear && nf && colorscript random'
+alias clr='clear && colorscript random'
 

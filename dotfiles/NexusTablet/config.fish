@@ -174,4 +174,15 @@ alias checknet='sudo slurm -z -s -d 1 -i wlan0'
 alias ..='cd ..' 
 alias frem='free -m -h'
 alias clm='clear & nf'
+alias fort='fortune | lolcat'
+alias clp='clear & fortune | lolcat'
+alias batt='upower -i /org/freedesktop/UPower/devices/battery_battery'
+alias batstat="batt | grep 'state'"
+alias batchg="batt | grep 'percentage'"
+alias aptd='sudo SKIP_AUTOSNAP= apt-get update'
+alias aptg='sudo SKIP_AUTOSNAP= apt-get upgrade'
+alias aptr='sudo SKIP_AUTOSNAP= apt-get remove'
+
+
+
 

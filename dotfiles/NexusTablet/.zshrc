@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export TERM="xterm-256color"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -70,7 +70,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete chucknorris hitchhiker bofh)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete chucknorris hitchhiker bofh)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,33 +120,33 @@ alias scannet='sudo iftop -n -b -p -P -B'
 
 ###Directory Aliases
 ### uncomment only if not using exa
-#alias lt='ls --human-readable --size -1 -S --classify'
-#alias ls='ls -ahl --color=auto'
-#alias ll='ls -alF'
-#alias la='ls -A'
-#alias lc='ls --color=auto'
+alias lt='ls --human-readable --size -1 -S --classify'
+alias ls='ls -ahl --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias lc='ls --color=auto'
 alias dir='ls'
 alias copy='cp'
 alias move='mv'
 alias sl='ls'
 
 ###exa specifc commands
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias l='exa -aFx --color=always --group-directories-first'
-alias lk='exa -al --color=always --group-directories-first'
+#alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+#alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+#alias ll='exa -l --color=always --group-directories-first'  # long format
+#alias lt='exa -aT --color=always --group-directories-first' # tree listing
+#alias l='exa -aFx --color=always --group-directories-first'
+#alias lk='exa -al --color=always --group-directories-first'
 
 ###for typos
 alias gerp='echo "You did it *again*!"; grep'
 
 ###bash specific
-alias reload='source ~/.bashrc && source ~/.bash_aliases'
+alias reload='source ~/.zshrc'
 
 ###system stuff
 alias clearmem='sync; sudo sysctl vm.drop_caches=3'
-alias nf='neofetch'
+alias nf='neofetch --battery_display --ascii_distro Ubuntu_small'
 alias frem='free -m -h'
 alias ..='cd ..'
 alias path='echo -e ${PATH//:/\\n}'
@@ -155,67 +155,51 @@ alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 alias sysinfo='sudo inxi -Fxz > /home/myrrdin/Documents/SysInfo.txt'
-alias mach='/home/myrrdin/macchina/target/release/./macchina'
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
 ###convenience items
-alias metasploit='cd /opt/metasploit-framework/bin/'
-alias console='sudo msfconsole'
-alias aptu='sudo apt update && sudo apt upgrade'
-alias aptd='sudo SKIP_AUTOSNAP= apt update'
-alias aptg='sudo SKIP_AUTOSNAP= apt upgrade'
-alias aptr='sudo SKIP_AUTOSNAP= apt remove'
-alias wipegame='cd /home/myrrdin/Apps/wipeout-rewrite-master'
-alias clm='clear && mach'
-alias clp='clear && mach && nwp'
+alias aptu='sudo apt-get update && sudo apt-get upgrade'
+alias aptd='sudo SKIP_AUTOSNAP= apt-get update'
+alias aptg='sudo SKIP_AUTOSNAP= apt-get upgrade'
+alias aptr='sudo SKIP_AUTOSNAP= apt-get remove'
+alias clm='clear && nf'
+alias clp='clear && nf && hitchhiker'
 #alias timeron='echo "TIMER_FORMAT='[%d]'; TIMER_PRECISION=2 ;"'
 alias reload='source ~/.zshrc'
-alias gstat='git status -u no'
-alias gcomm='git commit -m'
-alias gits='ssh -T git@github.com'
-alias gpush='git push'
-alias clr='clear && colorscript random && bofh'
+alias clr='clear && nf && bofh'
+alias batt='upower -i /org/freedesktop/UPower/devices/battery_battery'
+alias batstat="batt | grep 'state'"
+alias batchg="batt | grep 'percentage'"
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 ###POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir dir_writable root_indicator)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status root_indicator dir_writable)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
-POWERLEVEL9K_USER_DEFAULT_FOREGROUND='130'
+POWERLEVEL9K_USER_DEFAULT_FOREGOUND='darkorange'
 POWERLEVEL9K_USER_DEFAULT_BACKGROUND='235'
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='166'
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='202'
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='237'
 POWERLEVEL9K_DIR_HOME_FOREGROUND='238'
 POWERLEVEL9K_DIR_HOME_BACKGROUND='208'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='235'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='172'
 POWERLEVEL9K_DIR_PATH_HIGHLIGHT_BOLD=true
-#POWERLEVEL9K_USER_ROOT_FOREGOUND='170'
-#POWERLEVEL9K_USER_ROOT_BACKGROUND='138'
-#POWERLEVEL9K_USER_SUDO_FOREGROUND='009'
-#POWERLEVEL9K_USER_SUDO_BACKGROUND='008'
-#POWERLEVEL9K_SUDO_FOREGROUND='009'
-#POWERLEVEL9K_SUDO_BACKGROUND='008'
-POWERLEVEL9K_DIR_ETC_FOREGROUND='235'
+POWERLEVEL9K_USER_ROOT_FOREGOUND='160'
+POWERLEVEL9K_USER_ROOT_BACKGROUND='235'
+POWERLEVEL9K_USER_SUDO_FOREGOUND='196'
+POWERLEVEL9K_USER_SUDO_BACKGROUND='235'
+POWERLEVEL9K_DIR_ETC_FOREGOUND='235'
 POWERLEVEL9K_DIR_ETC_BACKGROUND='007'
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD='0'
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION='2'
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='208'
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='235'
-#POWERLEVEL9K_CONTEXT_TEMPLATE='%n'
-#POWERLEVEL9K_CONTEXT_TEMPLATE_FOREGROUND='208'
-#POWERLEVEL9K_CONTEXT_TEMPLATE_BACKGROUND='235'
-#POWERLEVEL9K_CONTEXT_USER_SUDO_FOREGROUND='009'
-#POWERLEVEL9K_CONTEXT_USER_SUDO_BACKGROUND='008'
-#POWERLEVEL9K_CONTEXT_DEFAULT_USER_SUDO_FOREGROUND='009'
-#POWERLEVEL9K_CONTEXT_DEFAULT_USER_SUDO_BACKGROUND='008'
-
-
 ###sources
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
