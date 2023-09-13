@@ -59,6 +59,7 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 <hr>
 
 <h2>Starship Prompt</h2>
+
 ![cmderror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/454deabe-81ba-429a-bb85-afa7019a8671) Error indicator (fish shell)
 
 ![cmdmodules](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d9ee64c0-521c-4b25-96a6-ad84518e065b) Where modules display (fish shell)
