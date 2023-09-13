@@ -59,7 +59,8 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 <hr>
 
 <h2>Starship Prompt</h2>
-![cmdbash](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d4fc5e81-a4e1-415e-b8f6-77acf145ecef) Bash shell indicator
+![bashicon](https://github.com/Funkinmofo/KrapBasket/assets/143419294/883bc04e-1efc-4a43-ae42-44127ea4bba9)
+ Bash shell indicator
 
 ![cmderror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/454deabe-81ba-429a-bb85-afa7019a8671) Error indicator (fish shell)
 
