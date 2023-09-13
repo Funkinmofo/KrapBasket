@@ -59,13 +59,13 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 <hr>
 
 <h2>Starship Prompt</h2>
-![bashicon](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d53c520f-7a2a-4c1d-afdf-0887a71a72c1) Bash indicator
-
 ![cmderror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/454deabe-81ba-429a-bb85-afa7019a8671) Error indicator (fish shell)
 
 ![cmdmodules](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d9ee64c0-521c-4b25-96a6-ad84518e065b) Where modules display (fish shell)
 
 ![cmdreadonly](https://github.com/Funkinmofo/KrapBasket/assets/143419294/4c359031-a255-4962-b0c1-6337021d7c2d) read only indicator (fish shell)
+
+![bashicon](https://github.com/Funkinmofo/KrapBasket/assets/143419294/effce8a7-026d-4032-90ff-3782fc4b8810) Bash indicator
 
 ![promptsong](https://github.com/Funkinmofo/KrapBasket/assets/143419294/df088fac-67ad-4c58-8d9c-f0d71afd8913) currently playing song (fish shell)
 
@@ -85,6 +85,7 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 # KrapBasket
 
-updates
+updates 
+
 
 <hr>
