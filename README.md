@@ -58,13 +58,16 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 <hr>
 
-<h2>Fish</h2>
+<h2>Starship Prompt</h2>
+![cmdbash](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d4fc5e81-a4e1-415e-b8f6-77acf145ecef) Bash shell indicator
 
-![prompt](https://github.com/Funkinmofo/KrapBasket/assets/143419294/eed72d3a-80a9-44de-a170-25a5ec522f65) starship read only
+![cmderror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/454deabe-81ba-429a-bb85-afa7019a8671) Error indicator (fish shell)
 
-![prompterror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/e70ef3d8-c528-436b-884d-662a3ce590b4) command error
+![cmdmodules](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d9ee64c0-521c-4b25-96a6-ad84518e065b) Where modules display (fish shell)
 
-![promptsong](https://github.com/Funkinmofo/KrapBasket/assets/143419294/df088fac-67ad-4c58-8d9c-f0d71afd8913) currently playing song
+![cmdreadonly](https://github.com/Funkinmofo/KrapBasket/assets/143419294/4c359031-a255-4962-b0c1-6337021d7c2d) read only indicator (fish shell)
+
+![promptsong](https://github.com/Funkinmofo/KrapBasket/assets/143419294/df088fac-67ad-4c58-8d9c-f0d71afd8913) currently playing song (fish shell)
 
 <hr>
 
