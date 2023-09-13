@@ -78,6 +78,9 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 ![zshell](https://github.com/Funkinmofo/KrapBasket/assets/143419294/bd6c19a2-3cda-45c2-8a9d-26ff84b2163b) zsh with a modified powerlevel9k setup
 
+![zshprompt](https://github.com/Funkinmofo/KrapBasket/assets/143419294/47ba8045-e521-4167-8f08-6c137ba40d66)
+
+
 <hr>
 
 <h2>Nexus 7 Stuff</h2>
