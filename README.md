@@ -62,6 +62,8 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 ![cmderror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/454deabe-81ba-429a-bb85-afa7019a8671) Error indicator (fish shell)
 
+![sudoflag](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d3899806-b14a-4011-a97d-ec616ad18256) sudo indicator
+
 ![cmdmodules](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d9ee64c0-521c-4b25-96a6-ad84518e065b) Where modules display (fish shell)
 
 ![cmdreadonly](https://github.com/Funkinmofo/KrapBasket/assets/143419294/4c359031-a255-4962-b0c1-6337021d7c2d) read only indicator (fish shell)
