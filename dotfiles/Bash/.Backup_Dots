@@ -1,4 +1,5 @@
-#!/bin/bash
+#! /usr/bin/bash
+
 rsync -a -u /home/myrrdin/.bashrc ~/KrapBasket/dotfiles/Bash/
 rsync -a -u /home/myrrdin/.bash_aliases ~/KrapBasket/dotfiles/Bash/
 rsync -a -u /home/myrrdin/.bash_functions ~/KrapBasket/dotfiles/Bash/
