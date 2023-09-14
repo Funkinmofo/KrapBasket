@@ -177,12 +177,12 @@ alias gcomm='git commit -m'
 alias gits='ssh -T git@github.com'
 alias gpush='git push'
 alias clr='clear && colorscript random && bofh'
-alias tildesk='tilix --session=/home/myrrdin/Documents/desktopterm.json'
+alias tildesk='tilix --session=/home/myrrdin/.tilix/desktopterm.json'
 alias tilpref='tilix --preferences'
-alias tilquad='tilix --session=/home/myrrdin/Documents/quad.json'
-alias tilhalf='tilix --session=/home/myrrdin/Documents/half.json'
-alias tilfull='tilix --session=/home/myrrdin/Documents/full.json'
-alias tilsplit='tilix --session=/home/myrrdin/Documents/split.json'
+alias tilquad='tilix --session=/home/myrrdin/.tilix/quad.json'
+alias tilhalf='tilix --session=/home/myrrdin/.tilix/half.json'
+alias tilfull='tilix --session=/home/myrrdin/.tilix/full.json'
+alias tilsplit='tilix --session=/home/myrrdin/.tilix/split.json'
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
