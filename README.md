@@ -2,6 +2,9 @@
 
 <hr>
 
+cava -
+https://github.com/karlstav/cava
+
 Fish spark -
 https://github.com/jorgebucaran/spark.fish
 
