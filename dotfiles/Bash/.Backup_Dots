@@ -4,24 +4,17 @@ rsync -a -u /home/myrrdin/.bash_aliases ~/KrapBasket/dotfiles/Bash/
 rsync -a -u /home/myrrdin/.bash_functions ~/KrapBasket/dotfiles/Bash/
 rsync -a -u /home/myrrdin/.Backup_Stuff ~/KrapBasket/dotfiles/Bash/
 rsync -a -u /home/myrrdin/.Backup_Dots ~/KrapBasket/dotfiles/Bash/
-
-rsync -a -u /home/myrrdin/Documents/skull3.txt ~/KrapBasket/dotfiles
-
+rsync -a -u /home/myrrdin/Documents/skull3.txt ~/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/.config/glava/bars.glsl ~/KrapBasket/dotfiles/glava/
 rsync -a -u /home/myrrdin/.config/glava/circle.glsl ~/KrapBasket/dotfiles/glava/
 rsync -a -u /home/myrrdin/.config/glava/customrad.glsl ~/KrapBasket/dotfiles/glava/
 rsync -a -u /home/myrrdin/.config/glava/radial.glsl ~/KrapBasket/dotfiles/glava/
 rsync -a -u /home/myrrdin/.config/glava/rc.glsl ~/KrapBasket/dotfiles/glava/
-
-rsync -a -u /home/myrrdin/.config/neofetch/config.conf ~/KrapBasket/dotfiles/neofetch
-
+rsync -a -u /home/myrrdin/.config/neofetch/config.conf ~/KrapBasket/dotfiles/neofetch/
 rsync -a -u /home/myrrdin/.config/starship.toml ~/KrapBasket/dotfiles/starship/
-
 rsync -a -u /home/myrrdin/.config/fish ~/KrapBasket/dotfiles/
-
 rsync -a -u /home/myrrdin/.config/macchina/macchina.toml ~/KrapBasket/dotfiles/macchina/
 rsync -a -u /home/myrrdin/.config/macchina/themes/Hydrogen.toml ~/KrapBasket/dotfiles/macchina/
-
 rsync -a -u /home/myrrdin/.zshrc ~/KrapBasket/dotfiles/zsh/
 
 date > ~/KrapBasket/dotfiles/BKUPComplete.txt
