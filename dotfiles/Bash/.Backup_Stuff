@@ -6,8 +6,8 @@ rsync -a -u /home/myrrdin/Pictures /media/myrrdin/Storage/Pictures/Linux
 rsync -a -u /home/myrrdin/Documents /media/myrrdin/Storage/Docs
 rsync -a -u /home/myrrdin/.Backup_Stuff /media/myrrdin/Storage/Bash
 rsync -a -u /home/myrrdin/Backup /media/myrrdin/Storage
-rsync -a -u /home/myrrdin/Documents/skull2.txt /media/myrrdin/Storage/Backup/MyConfigs/neofetch
-rsync -a -u /home/myrrdin/Documents/skull3.txt /media/myrrdin/Storage/Backup/MyConfigs/neofetch
+#rsync -a -u /home/myrrdin/Documents/skull2.txt /media/myrrdin/Storage/Backup/MyConfigs/neofetch
+#rsync -a -u /home/myrrdin/Documents/skull3.txt /media/myrrdin/Storage/Backup/MyConfigs/neofetch
 rsync -a -u /home/myrrdin/.config/audacious/config /media/myrrdin/Storage/Backup/MyConfigs/audacious
 rsync -a -u /home/myrrdin/.config/glava/bars.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava
 rsync -a -u /home/myrrdin/.config/glava/circle.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava
