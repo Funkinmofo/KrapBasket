@@ -1,0 +1,19 @@
+{
+    "child": {
+        "directory": "\/home\/myrrdin",
+        "height": 1055,
+        "profile": "c38653f5-434a-4cce-96b3-83045cd490d1",
+        "readOnly": false,
+        "synchronizedInput": true,
+        "type": "Terminal",
+        "uuid": "4db502bf-5a7a-417a-a185-08155c5415c9",
+        "width": 865
+    },
+    "height": 1055,
+    "name": "${title}",
+    "synchronizedInput": false,
+    "type": "Session",
+    "uuid": "d58d1e2f-0016-4842-ac90-5310d6293189",
+    "version": "1.0",
+    "width": 865
+}

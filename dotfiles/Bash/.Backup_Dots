@@ -16,6 +16,11 @@ rsync -a -u /home/myrrdin/.config/fish ~/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/.config/macchina/macchina.toml ~/KrapBasket/dotfiles/macchina/
 rsync -a -u /home/myrrdin/.config/macchina/themes/Hydrogen.toml ~/KrapBasket/dotfiles/macchina/
 rsync -a -u /home/myrrdin/.zshrc ~/KrapBasket/dotfiles/zsh/
+rsync -a -u /home/myrrdin/.tilix/desktopterm.json ~/KrapBasket/dotfiles/tilix/
+rsync -a -u /home/myrrdin/.tilix/full.json ~/KrapBasket/dotfiles/tilix/
+rsync -a -u /home/myrrdin/.tilix/half.json ~/KrapBasket/dotfiles/tilix/
+rsync -a -u /home/myrrdin/.tilix/quad.json ~/KrapBasket/dotfiles/tilix/
+rsync -a -u /home/myrrdin/.tilix/split.json ~/KrapBasket/dotfiles/tilix/
 
 date > ~/KrapBasket/dotfiles/BKUPComplete.txt
 

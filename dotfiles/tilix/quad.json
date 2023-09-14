@@ -1,0 +1,67 @@
+{
+    "child": {
+        "child1": {
+            "child1": {
+                "directory": "\/home\/myrrdin",
+                "height": 527,
+                "profile": "17020969-ed50-480e-9eb6-1d6de31b6538",
+                "readOnly": false,
+                "synchronizedInput": true,
+                "type": "Terminal",
+                "uuid": "cca8abe3-f716-4a21-81ae-23015cc627f3",
+                "width": 960
+            },
+            "child2": {
+                "directory": "\/home\/myrrdin",
+                "height": 527,
+                "profile": "17020969-ed50-480e-9eb6-1d6de31b6538",
+                "readOnly": false,
+                "synchronizedInput": true,
+                "type": "Terminal",
+                "uuid": "e5f8b5a2-5d32-4dc2-b50b-d352d9c94f24",
+                "width": 960
+            },
+            "orientation": 1,
+            "position": 49,
+            "ratio": 0.499526066350710896,
+            "type": "Paned"
+        },
+        "child2": {
+            "child1": {
+                "directory": "\/home\/myrrdin",
+                "height": 527,
+                "profile": "17020969-ed50-480e-9eb6-1d6de31b6538",
+                "readOnly": false,
+                "synchronizedInput": true,
+                "type": "Terminal",
+                "uuid": "85039647-54f8-499e-a918-8e3aba591ecb",
+                "width": 959
+            },
+            "child2": {
+                "directory": "\/home\/myrrdin",
+                "height": 527,
+                "profile": "17020969-ed50-480e-9eb6-1d6de31b6538",
+                "readOnly": false,
+                "synchronizedInput": true,
+                "type": "Terminal",
+                "uuid": "bf68435c-0b04-4e94-8925-d47cd8fa61a8",
+                "width": 959
+            },
+            "orientation": 1,
+            "position": 49,
+            "ratio": 0.499526066350710896,
+            "type": "Paned"
+        },
+        "orientation": 0,
+        "position": 50,
+        "ratio": 0.5,
+        "type": "Paned"
+    },
+    "height": 1055,
+    "name": "${title}",
+    "synchronizedInput": false,
+    "type": "Session",
+    "uuid": "0fc17812-e4fc-463d-ab2f-e569affffba8",
+    "version": "1.0",
+    "width": 1920
+}

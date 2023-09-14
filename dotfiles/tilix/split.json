@@ -1,0 +1,36 @@
+{
+    "child": {
+        "child1": {
+            "directory": "\/home\/myrrdin",
+            "height": 617,
+            "profile": "b5ba8059-bc6c-40f8-bc4b-ae0ab37b29e4",
+            "readOnly": false,
+            "synchronizedInput": true,
+            "title": "${id}: ${title}",
+            "type": "Terminal",
+            "uuid": "08b65de4-4475-4a5a-90a8-4a41988d4a8b",
+            "width": 960
+        },
+        "child2": {
+            "directory": "\/home\/myrrdin",
+            "height": 617,
+            "profile": "b5ba8059-bc6c-40f8-bc4b-ae0ab37b29e4",
+            "readOnly": false,
+            "synchronizedInput": true,
+            "type": "Terminal",
+            "uuid": "cbaa6ef8-59a8-4285-af90-7a84579bd8b1",
+            "width": 959
+        },
+        "orientation": 0,
+        "position": 50,
+        "ratio": 0.5,
+        "type": "Paned"
+    },
+    "height": 617,
+    "name": "${title}",
+    "synchronizedInput": false,
+    "type": "Session",
+    "uuid": "821fb85a-c3ce-4c29-a0e9-b0956a431894",
+    "version": "1.0",
+    "width": 1920
+}
