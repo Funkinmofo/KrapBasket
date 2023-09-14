@@ -177,6 +177,12 @@ alias gcomm='git commit -m'
 alias gits='ssh -T git@github.com'
 alias gpush='git push'
 alias clr='clear && colorscript random && bofh'
+alias tildesk='tilix --session=/home/myrrdin/Documents/desktopterm.json'
+alias tilsplit='tilix --session=/home/myrrdin/Documents/splitbottom.json'
+alias tilpref='tilix --preferences'
+alias tilquad='tilix --session=/home/myrrdin/Documents/quad.json'
+alias tilhalf='tilix --session=/home/myrrdin/Documents/half.json'
+alias tilfull='tilix --session=/home/myrrdin/Documents/full.json'
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -224,5 +230,5 @@ source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 #TIMER_FORMAT='[%d]'; TIMER_PRECISION=2 ;
 bofh | lolcat
 #eval "$(starship init zsh)"
-ps1=❱
+#ps1=❱
 
