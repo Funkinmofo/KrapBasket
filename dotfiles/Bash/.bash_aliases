@@ -58,6 +58,7 @@ alias mach='/home/myrrdin/macchina/target/release/./macchina'
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
+alias updots='~/.Backup_Dots'
 
 ###github
 alias gstat='git status -u no'
