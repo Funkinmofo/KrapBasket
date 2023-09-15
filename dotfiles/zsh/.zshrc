@@ -129,7 +129,7 @@ alias dir='ls'
 alias copy='cp'
 alias move='mv'
 alias sl='ls'
-
+alias ...='cd .. && cd ..'
 ###exa specifc commands
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
@@ -159,6 +159,7 @@ alias mach='/home/myrrdin/macchina/target/release/./macchina'
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
+alias nvim='~/Apps/./nvim.appimage'
 
 ###convenience items
 alias metasploit='cd /opt/metasploit-framework/bin/'
@@ -176,6 +177,7 @@ alias gstat='git status -u no'
 alias gcomm='git commit -m'
 alias gits='ssh -T git@github.com'
 alias gpush='git push'
+alias gadd='git add'
 alias clr='clear && colorscript random && bofh'
 alias tildesk='tilix --session=/home/myrrdin/.tilix/desktopterm.json'
 alias tilpref='tilix --preferences'

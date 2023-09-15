@@ -59,12 +59,15 @@ alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 alias updots='~/.Backup_Dots'
+alias ...='cd .. && cd ,,'
+alias nvim='~/Apps/./nvim.appimage'
 
 ###github
 alias gstat='git status -u no'
 alias gcomm='git commit -m'
 alias gits='ssh -T git@github.com'
 alias gpush='git push'
+alias gadd='git add'
 
 ###convenience items
 alias metasploit='cd /opt/metasploit-framework/bin/'
@@ -85,4 +88,3 @@ alias tilquad='tilix --session=/home/myrrdin/.tilix/quad.json'
 alias tilhalf='tilix --session=/home/myrrdin/.tilix/half.json'
 alias tilfull='tilix --session=/home/myrrdin/.tilix/full.json'
 alias tilsplit='tilix --session=/home/myrrdin/.tilix/split.json'
-
