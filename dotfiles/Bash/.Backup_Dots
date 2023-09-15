@@ -21,6 +21,7 @@ rsync -a -u /home/myrrdin/.tilix/full.json /home/myrrdin/KrapBasket/dotfiles/til
 rsync -a -u /home/myrrdin/.tilix/half.json /home/myrrdin/KrapBasket/dotfiles/tilix/
 rsync -a -u /home/myrrdin/.tilix/quad.json /home/myrrdin/KrapBasket/dotfiles/tilix/
 rsync -a -u /home/myrrdin/.tilix/split.json /home/myrrdin/KrapBasket/dotfiles/tilix/
+rsync -a -u /home/myrrdin/nanorc /home/myrrdin/KrapBasket/dotfiles/nano
 
 date > /home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt
 

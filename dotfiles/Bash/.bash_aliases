@@ -61,6 +61,7 @@ alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 alias updots='~/.Backup_Dots'
 alias ...='cd .. && cd ,,'
 alias nvim='~/Apps/./nvim.appimage'
+alias nano='nano -x'
 
 ###github
 alias gstat='git status -u no'
