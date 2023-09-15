@@ -21,9 +21,10 @@ visible         = true
 [box]
 border          = "double"
 visible         = true
-title           = "◽️◽️💻◽️◽️"
-title_color     = "Yellow"
+#title           = "◽️◽️💻◽️◽️"
 
+[custom_ascii]
+color           = "Yellow"
 
 [box.inner_margin]
 x               = 1
