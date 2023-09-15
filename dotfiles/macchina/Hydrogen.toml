@@ -1,7 +1,7 @@
 # Hydrogen
 
 spacing         = 2
-padding         = 0
+padding         = 1
 hide_ascii      = true
 separator       = "ᐉ"
 key_color       = "Yellow"
@@ -21,6 +21,8 @@ visible         = true
 [box]
 border          = "double"
 visible         = true
+title           = "◽️◽️💻◽️◽️"
+title_color     = "Yellow"
 
 
 [box.inner_margin]
