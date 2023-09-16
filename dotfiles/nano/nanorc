@@ -19,13 +19,13 @@
 ## Automatically indent a newly created line to the same number of
 ## tabs and/or spaces as the preceding line -- or as the next line
 ## if the preceding line is the beginning of a paragraph.
-# set autoindent
+ set autoindent
 
 ## Back up files to the current filename plus a tilde.
-# set backup
+ set backup
 
 ## The directory to put unique backup files in.
-# set backupdir ""
+ set backupdir "/home/myrrdin/Backup"
 
 ## Use bold text instead of reverse video text.
 # set boldtext
@@ -45,13 +45,13 @@
 # set casesensitive
 
 ## Constantly display the cursor position in the status bar or minibar.
-# set constantshow
+ set constantshow
 
 ## Use cut-from-cursor-to-end-of-line by default.
 # set cutfromcursor
 
 ## Do not use the line below the title bar, leaving it entirely blank.
-# set emptyline
+ set emptyline
 
 ## Set the target width for automatic hard-wrapping and for justifying
 ## paragraphs.  If the specified value is 0 or less, the wrapping point
@@ -89,7 +89,7 @@ set matchbrackets "(<[{)>]}"
 
 ## Suppress the title bar and show the filename plus a cursor-position
 ## percentage in the space of the status bar.
-# set minibar
+ set minibar
 
 ## Enable mouse support, if available for your system.  When enabled,
 ## mouse clicks can be used to place the cursor, set the mark (with a
@@ -117,7 +117,7 @@ set nohelp
 # set operatingdir ""
 
 ## Remember the cursor position in each file for the next editing session.
-# set positionlog
+ set positionlog
 
 ## Preserve the XON and XOFF keys (^Q and ^S).
 # set preserve
@@ -178,7 +178,7 @@ set stateflags
 # set tabstospaces
 
 ## Snip whitespace at the end of lines when justifying or hard-wrapping.
-# set trimblanks
+ set trimblanks
 
 ## Save files by default in Unix format (also when they were DOS or Mac).
 # set unix
@@ -298,7 +298,7 @@ include "/usr/share/nano/*.nanorc"
 #bind ^C copy main
 #bind ^V paste all
 #bind ^Q exit all
-#bind ^S savefile main
+bind ^S savefile main
 #bind ^W writeout main
 #bind ^O insert main
 #set multibuffer
