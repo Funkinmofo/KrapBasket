@@ -62,6 +62,9 @@ alias updots='~/.Backup_Dots'
 alias ...='cd .. && cd ,,'
 alias nvim='~/Apps/./nvim.appimage'
 alias nano='nano -x'
+alias fg1='fg %1'
+alias fg2='fg %2'
+alias fg3='fg %3'
 
 ###github
 alias gstat='git status -u no'

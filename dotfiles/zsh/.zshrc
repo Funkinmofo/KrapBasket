@@ -187,6 +187,9 @@ alias tilhalf='tilix --session=/home/myrrdin/.tilix/half.json'
 alias tilfull='tilix --session=/home/myrrdin/.tilix/full.json'
 alias tilsplit='tilix --session=/home/myrrdin/.tilix/split.json'
 alias updots='~/.Backup_Dots'
+alias fg1='fg %1'
+alias fg2='fg %2'
+alias fg3='fg %3'
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
