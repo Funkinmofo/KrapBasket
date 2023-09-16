@@ -55,11 +55,12 @@ format = '[⌚️$time ]($style)'
 
 [directory]
 style = "bg:#b37202 bold yellow"
-format = "[:$path]($style)[$read_only]($read_only_style)"
-truncation_length = 3
-truncate_to_repo = true
-truncation_symbol = "🛑"
+format = "[:$path $truncation_symbol]($style)[$read_only]($read_only_style)"
+truncation_length = 2
+truncate_to_repo = false
+truncation_symbol = "🔸"
 read_only = "🚧"
+read_only_style = "bg:#b370202 bold yellow"
 home_symbol = "🏠"
 use_os_path_sep = true
 fish_style_pwd_dir_length = 1
