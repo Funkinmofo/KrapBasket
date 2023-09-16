@@ -72,6 +72,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete chucknorris hitchhiker bofh)
 
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -163,8 +164,6 @@ alias nvim='~/Apps/./nvim.appimage'
 alias nano='nano -x'
 
 ###convenience items
-alias metasploit='cd /opt/metasploit-framework/bin/'
-alias console='sudo msfconsole'
 alias aptu='sudo apt update && sudo apt upgrade'
 alias aptd='sudo SKIP_AUTOSNAP= apt update'
 alias aptg='sudo SKIP_AUTOSNAP= apt upgrade'

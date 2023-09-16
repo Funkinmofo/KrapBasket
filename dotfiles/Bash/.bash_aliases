@@ -74,8 +74,6 @@ alias gpush='git push'
 alias gadd='git add'
 
 ###convenience items
-alias metasploit='cd /opt/metasploit-framework/bin/'
-alias console='sudo msfconsole'
 alias aptu='sudo apt update && sudo apt upgrade'
 alias aptd='sudo SKIP_AUTOSNAP= apt update'
 alias aptg='sudo SKIP_AUTOSNAP= apt upgrade'
