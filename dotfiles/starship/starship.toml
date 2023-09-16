@@ -175,7 +175,7 @@ ignore_submodules = true
 [git_status]
 format = '([\[$ahead_behind\]]($style))'
 conflicted = '🖕'
-ahead = '➕️'
+ahead = '➕️($count)'
 behind = '😰⇣'
 diverged = '😵⇕⇡'
 up_to_date = '✔️ '
