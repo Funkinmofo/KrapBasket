@@ -66,7 +66,7 @@ use_os_path_sep = true
 fish_style_pwd_dir_length = 1
 
 [character]
-success_symbol = '[❱](bold white)[❱](bold cyan)[❱](bold green)'
+success_symbol = '[❱](#b37202)[❱](#ffb300)[❱](#ffc87c)'
 error_symbol = '[❯](bold red)[💩](bold red)[❯](bold red)'
 
 [aws]
@@ -186,7 +186,7 @@ staged = '[++\($count\)](green)'
 renamed = '👅'
 deleted = '🗑️ '
 #typedchanged = ''
-style = 'bold red'
+style = '#ff8c69'
 ignore_submodules = false
 disabled = false
 
