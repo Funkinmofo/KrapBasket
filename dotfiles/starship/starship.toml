@@ -27,7 +27,7 @@ format = '[ $duration]($style) '
 min_time = 4
 show_milliseconds = true
 disabled = false
-style = "bold italic yellow"
+style = "bold italic #FFC600"
 
 [shell]
 fish_indicator = ' 🐠'
@@ -66,7 +66,7 @@ use_os_path_sep = true
 fish_style_pwd_dir_length = 1
 
 [character]
-success_symbol = '[❱](#b37202)[❱](#ffb300)[❱](#ffc87c)'
+success_symbol = '[❱](#FFC600)[❱](#ffb300)[❱](#b37202)'
 error_symbol = '[❯](bold red)[💩](bold red)[❯](bold red)'
 
 [aws]
