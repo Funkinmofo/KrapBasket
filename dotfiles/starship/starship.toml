@@ -376,9 +376,9 @@ disabled = false
 style = 'bold red'
 
 [rust]
-symbol = "🦀 "
+symbol = "⚙️ "
 version_format = 'v${raw}'
-format = '[ ⚙️ $version](red bold)'
+format = '[ $symbol$version](red bold)'
 detect_extensions = ['rs']
 detect_files = ['Cargo.toml']
 style = 'red'
