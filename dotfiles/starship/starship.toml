@@ -23,15 +23,15 @@ symbol = '💢'
 disabled = false
 
 [cmd_duration]
-format = ' [$duration]($style)'	
+format = '[ $duration]($style) '	
 min_time = 4
 show_milliseconds = true
 disabled = false
 style = "bold italic yellow"
 
 [shell]
-fish_indicator = ' 🐟'
-bash_indicator = ' ☠️ '
+fish_indicator = ' 🐠'
+bash_indicator = ' 👊'
 powershell_indicator = '_'
 unknown_indicator = 'mystery shell'
 style = 'cyan'
