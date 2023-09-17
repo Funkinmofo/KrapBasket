@@ -89,3 +89,4 @@ alias tilquad='tilix --session=/home/myrrdin/.tilix/quad.json'
 alias tilhalf='tilix --session=/home/myrrdin/.tilix/half.json'
 alias tilfull='tilix --session=/home/myrrdin/.tilix/full.json'
 alias tilsplit='tilix --session=/home/myrrdin/.tilix/split.json'
+

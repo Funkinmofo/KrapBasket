@@ -236,3 +236,12 @@ bofh | lolcat
 #eval "$(starship init zsh)"
 #ps1=❱
 
+function mdcd {
+    command mkdir $1 && cd $1
+}
+
+##super grep
+function fullgrip {
+command grep --with-filename --line-number --color=always "$1" "$2"
+
+ }
