@@ -158,11 +158,14 @@ am_or_rebase = 'AM/REBASE'
 disabled = false
 
 [git_commit]
-tag_symbol = " 🔖"
+tag_symbol = "🔖"
 format = '[\($hash$tag\)]($style) '
 style = 'bold green'
 only_detached = true
 disabled = false
+commit_hash_length = 4
+tag_max_candidates = 1
+tag_disabled = false
 
 [git_metrics]
 added_style = 	'green'
