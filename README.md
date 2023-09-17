@@ -63,6 +63,9 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 <h2>Starship Prompt</h2>
 
+
+![explained](https://github.com/Funkinmofo/KrapBasket/assets/143419294/dc65d6e9-48b4-4833-8427-f33c58e89e54) Breakdown of components
+
 ![cmderror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/454deabe-81ba-429a-bb85-afa7019a8671) Error indicator (fish shell)
 
 ![sudoflag](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d3899806-b14a-4011-a97d-ec616ad18256) sudo indicator
