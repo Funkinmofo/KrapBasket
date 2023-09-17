@@ -356,7 +356,7 @@ symbol = '⚕️ '
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'	
 python_binary = ['./venv/bin/python', 'python', 'python3', 'python2']
 version_format = 'v${raw}'
-style = 'bold yellow'
+style = 'bold #8031A7'
 detect_extensions = ['py']
 detect_files = ['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', 'requirements.txt', 'setup.py', 'tox.ini']
 
@@ -378,10 +378,10 @@ style = 'bold red'
 [rust]
 symbol = "⚙️ "
 version_format = 'v${raw}'
-format = '[ $symbol$version](red bold)'
+format = '[ $symbol$version]($style)'
 detect_extensions = ['rs']
 detect_files = ['Cargo.toml']
-style = 'red'
+style = 'bold #BC8F8F'
 
 
 [scala]
