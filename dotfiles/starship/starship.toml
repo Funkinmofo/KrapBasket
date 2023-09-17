@@ -186,7 +186,7 @@ staged = '[++\($count\)](green)'
 renamed = '👅'
 deleted = '🗑️ '
 #typedchanged = ''
-style = '#ff8c69'
+style = 'bold #ff8c69'
 ignore_submodules = false
 disabled = false
 
