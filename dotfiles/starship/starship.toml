@@ -68,8 +68,8 @@ fish_style_pwd_dir_length = 1
 
 [character]
 #success_symbol = '[❱](#FFC600)[❱](#ffb300)[❱](#b37202)'
-success_symbol = '[🭨🭬](#b37202)'
-error_symbol = '[💩🭨🭬](bold red)'
+success_symbol = '[🭨](#b37202)[🭬](#bf8015)'
+error_symbol = '[💩🭨](bold red)[🭬](#f70404)'
 #error_symbol = '[❯](bold red)[💩](bold red)[❯](bold red)'
 
 [aws]
