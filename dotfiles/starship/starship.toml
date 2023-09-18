@@ -30,8 +30,8 @@ disabled = false
 style = "bold italic yellow"
 
 [shell]
-fish_indicator = '🐟'
-bash_indicator = '👊'
+fish_indicator = '🐟 '
+bash_indicator = '👊 '
 powershell_indicator = '_'
 unknown_indicator = 'mystery shell'
 style = 'bg:#b37202 bold white'
@@ -60,7 +60,7 @@ format = "[:$path $truncation_symbol]($style)[$read_only]($read_only_style)"
 truncation_length = 2
 truncate_to_repo = false
 truncation_symbol = "🔸"
-read_only = "🚧"
+read_only = "🚧 "
 read_only_style = "bg:#b37202 bold yellow"
 home_symbol = "🏠"
 use_os_path_sep = true
