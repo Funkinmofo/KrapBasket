@@ -24,7 +24,7 @@ disabled = false
 
 [cmd_duration]
 format = ' [$duration]($style) '	
-min_time = 4
+min_time = 90
 show_milliseconds = true
 disabled = false
 style = "bold italic yellow"
