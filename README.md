@@ -63,20 +63,9 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 <h2>Starship Prompt</h2>
 
+![prompt](https://github.com/Funkinmofo/KrapBasket/assets/143419294/5c389ad5-41e2-4c92-903a-d45bb0e3b3b1)
 
-![explained](https://github.com/Funkinmofo/KrapBasket/assets/143419294/dc65d6e9-48b4-4833-8427-f33c58e89e54) 
-
-![cmderror](https://github.com/Funkinmofo/KrapBasket/assets/143419294/454deabe-81ba-429a-bb85-afa7019a8671) Error indicator (fish shell)
-
-![sudoflag](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d3899806-b14a-4011-a97d-ec616ad18256) sudo indicator
-
-![cmdmodules](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d9ee64c0-521c-4b25-96a6-ad84518e065b) Where modules display (fish shell)
-
-![cmdreadonly](https://github.com/Funkinmofo/KrapBasket/assets/143419294/4c359031-a255-4962-b0c1-6337021d7c2d) read only indicator (fish shell)
-
-![bashicon](https://github.com/Funkinmofo/KrapBasket/assets/143419294/effce8a7-026d-4032-90ff-3782fc4b8810) Bash indicator
-
-![promptsong](https://github.com/Funkinmofo/KrapBasket/assets/143419294/df088fac-67ad-4c58-8d9c-f0d71afd8913) currently playing song (fish shell)
+![readonly](https://github.com/Funkinmofo/KrapBasket/assets/143419294/323511f8-eae0-4771-87cc-6cb1dd587f96) Read only notification
 
 <hr>
 
