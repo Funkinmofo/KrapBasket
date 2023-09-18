@@ -1,6 +1,6 @@
 format = """
 $git_status$git_branch$git_commit$git_state$git_metrics$package$ruby$lua$c$rust$perl$python$php$java
-[░▒▓](#b37202)$username$os[](bg:#b37202 fg:#875d14)$status$localip$hostname$memory_usage$time$directory$container$shell$shlvl[🭪](#b37202)$sudo$cmd_duration$character
+[░▒▓](#b37202)$username$os[🭪](fg:#b37202)$sudo[🭨](fg:#b37202)$status$localip$hostname$memory_usage$time$directory$container$shell$shlvl[🭪](#b37202)$cmd_duration$character
 """
 right_format = """
 
@@ -17,9 +17,9 @@ disabled = false
 show_always = true
 
 [sudo]
-style = 'bold italic red '
+style = 'bold red '
 format = '[$symbol]($style)'
-symbol = '💢 '
+symbol = '🔆'
 disabled = false
 
 [cmd_duration]
