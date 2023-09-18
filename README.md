@@ -68,6 +68,9 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 ![newbash](https://github.com/Funkinmofo/KrapBasket/assets/143419294/035c3c00-6f94-4719-a8fb-86b70945bc1b) Bash & ReadOnly Indicators
 
+![error](https://github.com/Funkinmofo/KrapBasket/assets/143419294/429fec94-df08-47f3-9efd-f8fc3579ffc1)
+
+
 <hr>
 
 <h2>zsh</h2>
