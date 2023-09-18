@@ -239,8 +239,8 @@ format = '@[$localipv4](bold red) '
 disabled = true
 
 [lua]
-symbol = "🌙 "
-format = '[ $symbol$version]($style) '
+symbol = "🌙"
+format = '[$symbol$version]($style) '
 style = 'bold blue'
 version_format = 'v${raw}'
 detect_extensions = ['lua']
@@ -274,8 +274,14 @@ unknown_msg = '[unknown shell](bold yellow)'
 format = 'via [☃️ $state( \($name\))](bold blue) '
 
 [nodejs]
-symbol = " "
-format = 'via [🤖 $version](bold green) '
+symbol = ""
+format = '[$symbol($version )]($style)'
+#detect_extensions = ['js', 'mjs', 'cjs', 'ts', 'mts', 'cts']
+style ='bold green'
+#version_format = 'v${raw}'
+#detect_folders = ['node_modules']
+disabled = false
+#not_capable_style = 'bold red'
 
 [os]
 format = "[$symbol]($style)"
@@ -370,7 +376,7 @@ detect_files = ['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', '
 symbol = "󰟔 "
 
 [ruby]
-symbol = "🔺 "
+symbol = "🔺"
 format = '[$symbol($version )]($style)'
 detect_files = ['Gemfile', '.ruby-version']
 #detect_folders = []
@@ -381,8 +387,8 @@ style = 'bold red'
 
 [rust]
 symbol = "⚙️ "
-version_format = 'v${raw}'
-format = '[ $symbol$version]($style)'
+#version_format = 'v${raw}'
+format = '[$symbol$version]($style)'
 detect_extensions = ['rs']
 detect_files = ['Cargo.toml']
 style = 'bold #BC8F8F'
