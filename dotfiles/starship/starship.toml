@@ -326,10 +326,11 @@ Unknown = "❓ "
 Windows = "🪟 "
 
 [package]
-symbol = " 📦"
+symbol = "🎁"
 format = '[$symbol$version]($style)'
 version_format = 'v${raw}'
 style = 'bold 208'
+display_private = true
 disabled = false
 
 [perl]
