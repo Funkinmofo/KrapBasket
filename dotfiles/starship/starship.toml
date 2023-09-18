@@ -1,6 +1,6 @@
 format = """
 $git_status$git_branch$git_commit$git_state$git_metrics$package$ruby$lua$c$rust$perl$python$php$java
-[░▒▓](#b37202)$username$os[](bg:#b37202 fg:#875d14)$status$localip$hostname$memory_usage$time$directory$container[▓▒░](fg:#b37202)[](#423216)$shlvl$shell$sudo$cmd_duration$character
+[░▒▓](#b37202)$username$os[](bg:#b37202 fg:#875d14)$status$localip$hostname$memory_usage$time$directory$container[](#b37202)$shlvl$shell$sudo$cmd_duration$character
 """
 right_format = """
 
