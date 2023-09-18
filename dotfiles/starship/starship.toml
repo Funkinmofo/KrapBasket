@@ -34,7 +34,7 @@ fish_indicator = '🐟 '
 bash_indicator = '👊 '
 powershell_indicator = '_'
 unknown_indicator = 'mystery shell'
-style = 'bg:#b37202 bold white'
+style = 'bg:#b37202 white'
 disabled = false
 format = '[$indicator]($style)'
 
