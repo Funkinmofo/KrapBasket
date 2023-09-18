@@ -1,6 +1,6 @@
 format = """
 $git_status$git_branch$git_commit$git_state$git_metrics$package$ruby$lua$c$rust$perl$python$php$java
-[░▒▓](#b37202)$username$os[](bg:#b37202 fg:#875d14)$status$localip$hostname$memory_usage$time$directory$container[🭬](#b37202)$shlvl$shell$sudo$cmd_duration$character
+[░▒▓](#b37202)$username$os[](bg:#b37202 fg:#875d14)$status$localip$hostname$memory_usage$time$directory$container$shell$shlvl[🭬](#b37202)$sudo$cmd_duration$character
 """
 right_format = """
 
@@ -17,25 +17,26 @@ disabled = false
 show_always = true
 
 [sudo]
-style = 'bold green'
+style = 'bold italic red '
 format = '[$symbol]($style)'
-symbol = '💢'
+symbol = '💢 '
 disabled = false
 
 [cmd_duration]
-format = '[ $duration]($style) '	
+format = '[$duration]($style) '	
 min_time = 4
 show_milliseconds = true
 disabled = false
-style = "bold italic #FFC600"
+style = "bold italic yellow"
 
 [shell]
-fish_indicator = ' 🐠'
-bash_indicator = ' 👊'
+fish_indicator = '🐟'
+bash_indicator = '👊'
 powershell_indicator = '_'
 unknown_indicator = 'mystery shell'
-style = 'cyan'
+style = 'bg:#b37202 bold white'
 disabled = false
+format = '[$indicator]($style)'
 
 [shlvl]
 disabled = false
@@ -45,7 +46,7 @@ repeat = true
 symbol = '❯'
 repeat_offset = 1
 threshold = 0
-
+style = 'bg:#b37202 bold yellow'
 [time]
 disabled = true
 use_12hr = true
@@ -60,7 +61,7 @@ truncation_length = 2
 truncate_to_repo = false
 truncation_symbol = "🔸"
 read_only = "🚧"
-read_only_style = "(bg:#b370202 bold yellow)"
+read_only_style = "bg:#b37202 bold yellow"
 home_symbol = "🏠"
 use_os_path_sep = true
 fish_style_pwd_dir_length = 1
