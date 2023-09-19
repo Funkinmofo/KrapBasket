@@ -188,6 +188,8 @@ alias fg1='fg %1'
 alias fg2='fg %2'
 alias fg3='fg %3'
 alias ack-'ack -o'
+alias perfdata='sudo perf record -g -a sleep 10'
+alias perfread-'sudo perf report'
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
