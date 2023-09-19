@@ -24,7 +24,7 @@ disabled = false
 
 [cmd_duration]
 format = '[$duration]($style)'	
-min_time = 120
+min_time = 0
 show_milliseconds = true
 disabled = false
 style = "bg:#383633  #eee600"
