@@ -1,5 +1,5 @@
 format = """
-$git_status$git_branch$git_commit$git_state$git_metrics$package$ruby$lua$c$rust$perl$python$php$java
+$git_status$git_branch$git_commit$git_state$git_metrics$package$ruby$lua$c$rust$perl$python$php$java$nodejs$cmake
 [░▒▓](#b37202)$username$os[🭪](bg:#383633 fg:#b37202)$sudo[🭨](bg:#383633 fg:#b37202)$status$localip$hostname$memory_usage$time$directory$container$shell$shlvl[🭪](bg:#383633 fg:#b37202)$cmd_duration$character
 """
 right_format = """
@@ -91,6 +91,12 @@ detect_extensions = ['c', 'h']
 commands = [ [ 'cc', '--version' ], [ 'gcc', '--version' ], [ 'clang', '--version' ] ]
 style = 'bold 144'
 disabled = false
+
+[cmake]
+symbol = '△'
+format = '[$symbol($version )]($style)'
+version_format = 'v${raw}'
+style = 'dimmed blue'
 
 
 [conda]
@@ -277,12 +283,12 @@ unknown_msg = '[unknown shell](bold yellow)'
 format = 'via [☃️ $state( \($name\))](bold blue) '
 
 [nodejs]
-symbol = ""
-format = '[$symbol($version )]($style)'
-#detect_extensions = ['js', 'mjs', 'cjs', 'ts', 'mts', 'cts']
+symbol = "🤖"
+format = '[$symbol($version)]($style)'
+detect_extensions = ['js', 'mjs', 'cjs', 'ts', 'mts', 'cts']
 style ='bold green'
-#version_format = 'v${raw}'
-#detect_folders = ['node_modules']
+version_format = 'v${raw}'
+detect_folders = ['node_modules']
 disabled = false
 #not_capable_style = 'bold red'
 
