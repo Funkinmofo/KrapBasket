@@ -27,7 +27,7 @@ format = '[$duration]($style)'
 min_time = 120
 show_milliseconds = true
 disabled = false
-style = "bg:#383633 bold italic yellow"
+style = "bg:#383633  #eee600"
 
 [shell]
 fish_indicator = '🐟 '
