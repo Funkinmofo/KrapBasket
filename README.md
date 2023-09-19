@@ -64,9 +64,14 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 <h2>Starship Prompt</h2>
 
 
-![newexplain](https://github.com/Funkinmofo/KrapBasket/assets/143419294/2a41894a-152e-4a88-bb9f-ffe81a36266a)
+![explain](https://github.com/Funkinmofo/KrapBasket/assets/143419294/aaaf2103-fa5e-4b8d-af6d-21cd288e4532)
 
-![newbash](https://github.com/Funkinmofo/KrapBasket/assets/143419294/035c3c00-6f94-4719-a8fb-86b70945bc1b) Bash & ReadOnly Indicators
+![sudoreadonly](https://github.com/Funkinmofo/KrapBasket/assets/143419294/d355c5bc-0b6d-4abd-8e46-61dc19fce2e0)
+
+Sudo and Read Only Indicators
+
+![bash](https://github.com/Funkinmofo/KrapBasket/assets/143419294/1e22fe32-f0ac-4e2a-9e7e-7d0b902c0f2c) Bash Indicator
+
 
 ![error](https://github.com/Funkinmofo/KrapBasket/assets/143419294/429fec94-df08-47f3-9efd-f8fc3579ffc1) Error indicator
 
