@@ -10,7 +10,7 @@ right_format = """
 #[line_break]
 #disabled = true
 [username]
-style_user = 'bg:#b37202 bold black'
+style_user = 'bg:#b37202 bold #21201f'
 style_root = 'bg:#b37202 bold red'
 format = '[💀$user]($style)'
 disabled = false
