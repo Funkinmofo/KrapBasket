@@ -1,6 +1,6 @@
 format = """
 $git_status$git_branch$git_commit$git_state$git_metrics$package$ruby$lua$c$rust$perl$python$php$java
-[░▒▓](#b37202)$username$os[🭪](fg:#b37202)$sudo[🭨](fg:#b37202)$status$localip$hostname$memory_usage$time$directory$container$shell$shlvl[🭪](#b37202)$cmd_duration$character
+[░▒▓](#b37202)$username$os[🭪](bg:#383633 fg:#b37202)$sudo[🭨](bg:#383633 fg:#b37202)$status$localip$hostname$memory_usage$time$directory$container$shell$shlvl[🭪](bg:#383633 fg:#b37202)$cmd_duration$character
 """
 right_format = """
 
@@ -17,17 +17,17 @@ disabled = false
 show_always = true
 
 [sudo]
-style = 'bold red '
+style = 'bg:#383633 bold red '
 format = '[$symbol]($style)'
 symbol = '🔆'
 disabled = false
 
 [cmd_duration]
-format = ' [$duration]($style) '	
-min_time = 90
+format = '[$duration]($style)'	
+min_time = 0
 show_milliseconds = true
 disabled = false
-style = "bold italic yellow"
+style = "bg:#383633 bold italic yellow"
 
 [shell]
 fish_indicator = '🐟 '
@@ -68,8 +68,8 @@ fish_style_pwd_dir_length = 1
 
 [character]
 #success_symbol = '[❱](#FFC600)[❱](#ffb300)[❱](#b37202)'
-success_symbol = '[🭨](#b37202)[🭬](#bf8015)'
-error_symbol = '[💩🭨](bold red)[🭬](#f70404)'
+success_symbol = '[🭨](bg:#383633 fg:#b37202)[🭬](#bf8015)'
+error_symbol = '[ 💩🭨](bg:#383633 bold red)[🭬](#f70404)'
 #error_symbol = '[❯](bold red)[💩](bold red)[❯](bold red)'
 
 [aws]
