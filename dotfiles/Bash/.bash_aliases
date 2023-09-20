@@ -92,3 +92,7 @@ alias tilsplit='tilix --session=/home/myrrdin/.tilix/split.json'
 alias ack-'ack -o'
 alias perfdata='sudo perf record -g -a sleep 10'
 alias perfread='sudo perf report'
+alias activeports='sudo netstat -tunlp'
+alias shortports='sudo lsof -nP -iTCP -sTCP:LISTEN'
+alias openports='sudo ss -tunlp'
+

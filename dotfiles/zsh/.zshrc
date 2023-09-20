@@ -190,6 +190,9 @@ alias fg3='fg %3'
 alias ack-'ack -o'
 alias perfdata='sudo perf record -g -a sleep 10'
 alias perfread-'sudo perf report'
+alias activeports='sudo netstat -tunlp'
+alias shortports='sudo lsof -nP -iTCP -sTCP:LISTEN'
+alias openports='sudo ss -tunlp'
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
