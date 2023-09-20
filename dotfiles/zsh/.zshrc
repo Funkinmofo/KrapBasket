@@ -193,6 +193,7 @@ alias perfread-'sudo perf report'
 alias activeports='sudo netstat -tunlp'
 alias shortports='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias openports='sudo ss -tunlp'
+alias svcall='service --status-all'
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true

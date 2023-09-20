@@ -95,4 +95,4 @@ alias perfread='sudo perf report'
 alias activeports='sudo netstat -tunlp'
 alias shortports='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias openports='sudo ss -tunlp'
-
+alias svcall='service --status-all'
