@@ -97,3 +97,5 @@ alias shortports='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias openports='sudo ss -tunlp'
 alias svcall='service --status-all'
 alias constat='netstat --inet -n'
+alias sysactive='systemctl --type=service --state=running | grep active'
+
