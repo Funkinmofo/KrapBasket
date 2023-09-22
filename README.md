@@ -63,14 +63,17 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 <h2>Starship Prompt</h2>
 
+![explain](https://github.com/Funkinmofo/KrapBasket/assets/143419294/2d8c4427-b34b-4f17-bb3d-1be3891c0c10)
+
+![error](https://github.com/Funkinmofo/KrapBasket/assets/143419294/ab861e14-850e-4520-9a7a-6aa79a10ea62)
+
+
+
 <hr>
 
 <h2>zsh</h2>
 
-![zshell](https://github.com/Funkinmofo/KrapBasket/assets/143419294/bd6c19a2-3cda-45c2-8a9d-26ff84b2163b) zsh with a modified powerlevel9k setup
-
-![zshprompt](https://github.com/Funkinmofo/KrapBasket/assets/143419294/47ba8045-e521-4167-8f08-6c137ba40d66)
-
+![zsh](https://github.com/Funkinmofo/KrapBasket/assets/143419294/40dedaef-665e-4dd5-aa39-478fc79db0c4)
 
 <hr>
 
