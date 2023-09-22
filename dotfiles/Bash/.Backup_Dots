@@ -22,6 +22,14 @@ rsync -a -u /home/myrrdin/.tilix/half.json /home/myrrdin/KrapBasket/dotfiles/til
 rsync -a -u /home/myrrdin/.tilix/quad.json /home/myrrdin/KrapBasket/dotfiles/tilix/
 rsync -a -u /home/myrrdin/.tilix/split.json /home/myrrdin/KrapBasket/dotfiles/tilix/
 rsync -a -u /home/myrrdin/.config/nano/nanorc /home/myrrdin/KrapBasket/dotfiles/nano
+rsync -a -u /home/myrrdin/.conkyrc /home/myrrdin/KrapBasket/dotfiles/conky/
+rsync -a -u /home/myrrdin/Documents/.conkyrc1line /home/myrrdin/KrapBasket/dotfiles/conky/
+rsync -a -u /home/myrrdin/Documents/crapolarc /home/myrrdin/KrapBasket/dotfiles/conky/
+rsync -a -u /home/myrrdin/myrr-filesys /home/myrrdin/KrapBasket/dotfiles/conky/
+rsync -a -u /home/myrrdin/myrr-net /home/myrrdin/KrapBasket/dotfiles/conky/
+rsync -a -u /home/myrrdin/myrr-procs /home/myrrdin/KrapBasket/dotfiles/conky/
+rsync -a -u /home/myrrdin/myrr-stats /home/myrrdin/KrapBasket/dotfiles/conky/
+
 
 date > /home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt
 
