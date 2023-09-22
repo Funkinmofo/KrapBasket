@@ -66,8 +66,8 @@ ${color orange}$hr
 #${color orange}Frequency (in GHz):$color $freq_g
 ${color orange}RAM:$color $mem/$memmax
 $memperc% ${membar 4}
-#${color orange}${memgraph 20,250 #b37202 #ff4500 -l}${color white}
+#${color orange}${memgraph 20,250 b37202 ff4500 -l}${color white}
 ${color orange}CPU:$color $cpu% ${cpubar 4}
 ${color orange}CPU Temp:$color ${acpitemp thermal_zone2}°C
-${color orange}${cpugraph cpu0 20,250 #b37202 #ff4500 -l}
+${color orange}${cpugraph cpu0 20,250 b37202 ff4500 -l}
 ]]
