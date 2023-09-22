@@ -66,5 +66,5 @@ ${color orange}Local IP(s): ${color white}${execi 300 ifconfig | sed -En 's/127.
 ${color orange}Wireless:${color} ${wireless_essid wlp3s0}
 ${color orange}Up:$color ${alignr}${upspeed wlp3s0} ${color grey} ${color orange}${alignr}Total:${color green} ${totalup wlp3s0}
 ${color orange}Down:${color white} ${offset 5}${alignr}${downspeed wlp3s0} ${color orange}${alignr}Total:${color pink} ${totaldown wlp3s0}
-${color orange}Signal Str:${color green}${wireless_link_bar 5 wlp3s0}%
+${color orange}Signal Str:${color green}${wireless_link_bar 5 wlp3s0}
 ]]

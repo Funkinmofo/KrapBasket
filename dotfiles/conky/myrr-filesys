@@ -27,7 +27,7 @@ conky.config = {
     extra_newline = false,
     font = 'Comfortaa:size=10',
     gap_x = 260,
-    gap_y = 60,
+    gap_y = 65,
     minimum_height = 5,
     minimum_width = 255,
     net_avg_samples = 2,
@@ -59,7 +59,7 @@ conky.text = [[
 ${color orange}[File systems]$hr
 HD $color${fs_used /}/${fs_size /} ${color orange}i/o: ${color white}${diskio /dev/sda7}
 ${fs_bar 6 /}
-${color orange}${diskiograph /dev/sda7 }
+${color orange}${diskiograph /dev/sda7 20,250 FF7800 b37202 -t}
 #${alignc}${color orange}i/o: ${color white}${diskio /dev/sda7}
 #${color orange}Read${goto 120}${color white}${diskio_read /dev/sda7 }
 #${color orange}Write${goto 120}${color white}${diskio_write /dev/sda7 }
