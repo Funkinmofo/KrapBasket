@@ -76,7 +76,8 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 <h2>Nexus 7 Stuff</h2>
 
-![nexus](https://github.com/Funkinmofo/KrapBasket/assets/143419294/ba7312cd-79f6-4822-a012-732e27b9c5cd) Nexus 7 (2012) running Ubuntu with Fish shell
+![nexus](https://github.com/Funkinmofo/KrapBasket/assets/143419294/de583169-1165-4afc-9d9b-450a9af1a06c)
+ Nexus 7 (2012) running Ubuntu with Fish shell
 
 <hr>
 
