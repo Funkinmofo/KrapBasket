@@ -77,6 +77,7 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 <h2>zsh</h2>
 
 ![zsh](https://github.com/Funkinmofo/KrapBasket/assets/143419294/40dedaef-665e-4dd5-aa39-478fc79db0c4)
+Modified Powerlevel9k zsh prompt
 
 <hr>
 
