@@ -16,12 +16,13 @@ conky.config = {
     background = true,
     border_width = 1,
     cpu_avg_samples = 2,
-    default_color = 'white',
-    default_outline_color = 'orange',
+    default_color = 'orange',
+    default_outline_color = '536878',
     default_shade_color = 'white',
     double_buffer = true,
     draw_borders = false,
     draw_graph_borders = true,
+    default_graph_border_color = '536878',
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
@@ -49,7 +50,7 @@ conky.config = {
     maximum_width = 270,
 own_window_transparent = false,
     own_window_argb_visual = true,
-    own_window_argb_value = 25,
+    own_window_argb_value = 50,
 
     
 
@@ -62,31 +63,40 @@ Kernel:${alignr}$kernel
 OS:${alignr}${execi 13000 cat /etc/lsb-release | grep "DISTRIB_DESCRIPTION" | sed 's/DISTRIB_DESCRIPTION=//g' | tr -d '"", '''}
 Uptime:${alignr}$uptime
 Users:${alignr}${execi 13000 who | awk '{print $1}'|sort -u}
-${color #d1d1d1}[NETWORK]$hr${color}
+${color 536878}$hr${color}
+${color orange}[NETWORK]$hr${color}
 Gateway:${alignr}$gw_ip
-Local IP: ${alignr} ${execi 300 ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'}
+Local IP(s): ${alignr}${execi 300 ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'}
 External IP: ${alignr} ${execi 300 curl ipinfo.io/ip}
 SSID: ${alignr} ${wireless_essid wlp3s0}
-Connection Quality: ${wireless_link_bar wlp3s0}
-${color #d1d1d1}[CPU]$hr${color}
-CPU usage:${alignr}${cpu cpu0}%
-Temperature:${alignr}${acpitemp thermal_zone2}°C
-$cpugraph
+$hr
+Total Upload Ethernet ${alignr}${color green}${totalup eno1}${color}
+Total Download Ethernet ${alignr}${color pink}${totaldown eno1}${color}
+Total Upload Wifi ${alignr}${color green} ${totalup wlp3s0}${color}
+Total Download Wifi ${alignr}${color pink} ${totaldown wlp3s0}${color}
+${color 536878}$hr${color}
+${color orange}[CPU]$hr${color}
+Utilization:${alignr}${color fcc200}${cpu cpu0}%${color}
 $cpubar
-${color #d1d1d1}[HDD]$hr${color}
+Temperature:${alignr}${color fcc200}${acpitemp thermal_zone2}°C${color}
+${color fcc200}${cpugraph 20,250 c55621 b37202 -l}${color}
+${color orange}[MEMORY]$hr${color}
+Utilization:${alignr}${color fcc200}$memperc% $mem/$memmax${color}
+${color fcc200}${memgraph 15,250 c55621 b37202 -l}${color}
+Available:${alignr}  ${color fcc200}$memeasyfree${color}
+${color 536878}$hr${color}
+${color orange}[HDD]$hr${color}
 Filesystem Space Left:
-/${alignr}${fs_used /}/${fs_size /}
+HD${alignr}${fs_used /}/${fs_size /}
 $fs_bar
-${color orange}${diskiograph /dev/sda7}
-${color orange}I/O:${alignr}${color white}${diskio /dev/sda7}
+${color fcc200}${diskiograph /dev/sda7 15,250 C55621 b37202 -l}${color}
+${color orange}I/O:${alignr}${color fcc200}${diskio /dev/sda7}${color}
 ${color #b37202}Storage ${alignr}${fs_used /media/myrrdin/Storage}/${fs_size /media/myrrdin/Storage}
 ${fs_bar /media/myrrdin/Storage}
-Swap usage:${alignr}$swap/$swapmax
-${color #d1d1d1}[MEMORY]$hr${color}
-Memory Usage:${alignr}$mem / $memmax
-$memgraph
-RAM:${alignr}$memperc% / $memeasyfree
-${color #d1d1d1}[TOP PROCESSES]$hr${color}
+Swap usage:${alignr}${color fcc200}$swap/$swapmax${color}
+$swapbar
+${color 536878}$hr${color}
+${color orange}[TOP PROCESSES]$hr${color}
 ${top name 1}${alignr}${top cpu 1}%
 ${top name 2}${alignr}${top cpu 2}%
 ${top name 3}${alignr}${top cpu 3}%
