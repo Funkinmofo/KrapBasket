@@ -69,13 +69,13 @@ $memperc% ${membar 4}
 #${color orange}${memgraph 20,250 #b37202 #ff4500 -l}${color white}
 ${color orange}CPU:$color $cpu% ${cpubar 4}
 ${color orange}CPU Temp:$color ${acpitemp thermal_zone2}°C
-${color orange}${cpugraph cpu0 20,250 #b37202 #ff4500 -l}$ 
+${color orange}${cpugraph cpu0 10,250 b37202 ff4500 -l} 
 #${color orange}$hr 
 
 ${color orange}[File systems]$hr
 HD $color${fs_used /}/${fs_size /} ${color orange}i/o: ${color white}${diskio /dev/sda7}
 ${fs_bar 6 /}
-${color orange}${diskiograph /dev/sda7 }
+${color orange}${diskiograph /dev/sda7 20,250 b37202 ff4500 -l}
 #${alignc}${color orange}i/o: ${color white}${diskio /dev/sda7}
 #${color orange}Read${goto 120}${color white}${diskio_read /dev/sda7 }
 #${color orange}Write${goto 120}${color white}${diskio_write /dev/sda7 }
@@ -100,11 +100,11 @@ ${color orange}Signal Str:${color green}${wireless_link_bar 5 wlp3s0}%
 
 ${color orange}[Processes]$hr
 ${color orange}Proc:$color $processes  ${color orange}Running:$color $running_processes
-${color orange}Name              PID     CPU%   MEM%
-${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
-${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
-${color lightgrey} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
-${color lightgrey} ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
+${color orange}${goto 5}Name              ${goto 103} PID  ${goto 160}CPU%   ${alignr}MEM%
+${color lightgrey} ${goto 5}${top name 1}  ${goto 100}${top pid 1} ${goto 160}${top cpu 1} ${alignr}${top mem 1}
+${color lightgrey} ${goto 5}${top name 2}  ${goto 100}${top pid 2} ${goto 160}${top cpu 2} ${alignr}${top mem 2}
+${color lightgrey}${goto 5} ${top name 3}  ${goto 100}${top pid 3} ${goto 160}${top cpu 3} ${alignr}${top mem 3}
+${color lightgrey} ${goto 5}${top name 4}  ${goto 100}${top pid 4} ${goto 160}${top cpu 4} ${alignr}${top mem 4}
 
 ${color orange}Song Playing$hr
 ${font Monument Extended:size=8}${color grey}${execi 60 playerctl metadata --format "{{ artist }}-{{ title }}"}
