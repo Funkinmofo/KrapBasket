@@ -65,9 +65,9 @@ https://www.tecmint.com/lolcat-color-output-linux-terminal/
 
 ![explain](https://github.com/Funkinmofo/KrapBasket/assets/143419294/2d8c4427-b34b-4f17-bb3d-1be3891c0c10)
 
-![error](https://github.com/Funkinmofo/KrapBasket/assets/143419294/ab861e14-850e-4520-9a7a-6aa79a10ea62)
+![error](https://github.com/Funkinmofo/KrapBasket/assets/143419294/ab861e14-850e-4520-9a7a-6aa79a10ea62) Error Prompt
 
-![bash](https://github.com/Funkinmofo/KrapBasket/assets/143419294/e087f852-7648-4768-a9ed-1967bf002c94)
+![bash](https://github.com/Funkinmofo/KrapBasket/assets/143419294/e087f852-7648-4768-a9ed-1967bf002c94) Bash Prompt
 
 
 
