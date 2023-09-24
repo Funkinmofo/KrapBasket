@@ -16,7 +16,7 @@ conky.config = {
     background = true,
     border_width = 1,
     cpu_avg_samples = 2,
-    default_color = 'ff7800',
+    default_color = 'a3621d',
     default_outline_color = 'orange',
     default_shade_color = 'white',
     double_buffer = true,
@@ -46,7 +46,7 @@ conky.config = {
     uppercase = false,
     use_spacer = 'none',
     use_xft = true,
-    maximum_width = 250,
+    maximum_width = 200,
 own_window_transparent = false,
     own_window_argb_visual = true,
     own_window_argb_value = 25,
@@ -54,21 +54,21 @@ own_window_transparent = false,
 
 conky.text = [[
 ${alignc}Kernel: ${kernel}
-Uptime:  ${uptime} ${alignr}Users: ${execi 13000 who | awk '{print $1}'|sort -u}
-${color C55621}[CPU]$hr${color}
- ${color FFA500}  ${cpu cpu0}%${color} ${cpubar cpu0 5,200}
-Frequency: ${freq_g cpu0}Ghz
-${cpugraph cpu0 10,250 FFA500 F66151 -l}
-${color C55621}[Mem]$hr${color}
- ${color FFA500} $memperc%${color} ${membar 4}
+Uptime: ${color FFA500} ${uptime}${color} ${alignr}Users: ${color FFA500} ${execi 13000 who | awk '{print $1}'|sort -u}${color}
+${color C55621}[${color FFA500}CPU${color}${color C55621}]$hr${color}
+ ${color FFA500}  ${cpu cpu0}%${color} ${cpubar cpu0 5}
+#Frequency: ${freq_g cpu0}Ghz
+#${cpugraph cpu0 10,150 FFA500 F66151 -l}
+${color C55621}[${color FFA500}MEM${color}${color C55621}]$hr${color}
+ ${color FFA500} $memperc%${color} ${membar 5}
  ${color FFA500} ${alignc}${mem}${color} of ${memfree}/${memmax}
-${color C55621}[FileSys]$hr${color}
+${color C55621}[${color FFA500}Filesys${color}${color C55621}]$hr${color}
 HD ${fs_type /}${color FFA500} i/o: ${diskio /dev/sda7}${color}
-${fs_free_perc /} ${fs_bar 5,200 /} ${fs_size /}
-${diskiograph /dev/sda7 15,250 b37202 F66151 -l}
+${fs_used_perc /}% ${fs_bar 5 /}
+${diskiograph /dev/sda7 20,200 b37202 6b1f0d -t}
 #${color C55621}[Swap]$hr${color}
 #${swap}${swapbar 5,100}${swapfree}/${swapmax}
-${color C55621}Network$hr${color}
-Eth :  ${alignc}${downspeedgraph eno1 10,150 b37202 F66151 -l} ${color pink}${totaldown eno1}${color}
-Wifi:  ${alignc}${downspeedgraph wlp3s0 10,150 b37202 F66151 -l} ${color pink} ${totaldown wlp3s0}${color}
+${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}
+Eth :  ${alignc}${downspeedgraph eno1 10,100 FFA500 6b1f0d -t} ${color pink}${totaldown eno1}${color}
+Wifi:  ${alignc}${downspeedgraph wlp3s0 10,100 FFA500 6b1f0d -t} ${color pink} ${totaldown wlp3s0}${color}
 ]]
