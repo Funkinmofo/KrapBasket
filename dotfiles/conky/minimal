@@ -55,7 +55,7 @@ own_window_transparent = false,
 conky.text = [[
 ${alignc}Kernel: ${kernel}
 Uptime: ${color FFA500} ${uptime}${color} ${alignr}Users: ${color FFA500} ${execi 13000 who | awk '{print $1}'|sort -u}${color}
-${color C55621}[${color FFA500}CPU${color}${color C55621}]${alignr}----------------------------------${color C55621}[${color FFA500}${acpitemp thermal_zone2}°C${color C55621}]$color}
+${color C55621}[${color FFA500}CPU${color}${color C55621}]${alignr}-------------------------------${color C55621}[${color FFA500}${exec sensors | grep 'Package id' | awk '{print $4}' | sed 's/^.//'}${color C55621}]$color}
  ${color FFA500}  ${cpu cpu0}%${color} ${cpubar cpu0 5} 
 #Frequency: ${freq_g cpu0}Ghz
 #${cpugraph cpu0 10,150 FFA500 F66151 -l}
@@ -71,4 +71,5 @@ ${diskiograph /dev/sda7 20,200 b37202 6b1f0d -t}
 ${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}
 Eth :  ${alignc}${downspeedgraph eno1 10,100 FFA500 6b1f0d -t} ${color pink}${totaldown eno1}${color}
 Wifi:  ${alignc}${downspeedgraph wlp3s0 10,100 FFA500 6b1f0d -t} ${color pink} ${totaldown wlp3s0}${color}
+
 ]]
