@@ -12,7 +12,7 @@
 -- https://www.lua.org/pil/contents.html
 
 conky.config = {
-    alignment = 'top_left',
+    alignment = 'top_right',
     background = true,
     border_width = 1,
     cpu_avg_samples = 2,
@@ -65,10 +65,10 @@ ${color C55621}[${color FFA500}MEM${color}${color C55621}]$hr${color}
 ${color C55621}[${color FFA500}Filesys${color}${color C55621}]$hr${color}
 HD ${fs_type /}${color FFA500} i/o: ${diskio /dev/sda7}${color}
 ${fs_used_perc /}% ${fs_bar 5 /}
-${diskiograph /dev/sda7 20,200 b37202 6b1f0d -t -l}
+${diskiograph /dev/sda7 20,200 b37202 6b1f0d -t}
 #${color C55621}[Swap]$hr${color}
 #${swap}${swapbar 5,100}${swapfree}/${swapmax}
-${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}$
+${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}
 ᐁ: ${color FFA500}${downspeed eno1}${color} ${goto 80} ᐃ: ${color FFA500}${upspeed eno1}${color}${alignr}${color pink}${totaldown eno1}
 # ${alignc}${downspeedgraph eno1 10,100 FFA500 6b1f0d -t} ${color pink}${totaldown eno1}${color}
 ${color}Wifi:   ${goto 35}ᐁ:${color FFA500} ${downspeed wlp3s0}${color} ${goto 100} ᐃ:${color FFA500}${upspeed wlp3s0}${color}${alignr}${color pink}${totaldown wlp3s0}
