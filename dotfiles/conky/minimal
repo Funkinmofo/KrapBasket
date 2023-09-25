@@ -68,8 +68,8 @@ ${fs_used_perc /}% ${fs_bar 5 /}
 ${diskiograph /dev/sda7 20,200 b37202 6b1f0d -t}
 #${color C55621}[Swap]$hr${color}
 #${swap}${swapbar 5,100}${swapfree}/${swapmax}
-${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}
-Eth :  ${alignc}${downspeedgraph eno1 10,100 FFA500 6b1f0d -t} ${color pink}${totaldown eno1}${color}
-Wifi:  ${alignc}${downspeedgraph wlp3s0 10,100 FFA500 6b1f0d -t} ${color pink} ${totaldown wlp3s0}${color}
+${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}$
+Eth: ${alignc}${downspeedgraph eno1 10,110 FFA500 6b1f0d -t} ${color pink}${totaldown eno1}${color}
+Wifi:${alignc}${downspeedgraph wlp3s0 10,110 FFA500 6b1f0d -t} ${color pink} ${totaldown wlp3s0}${color}
 
 ]]
