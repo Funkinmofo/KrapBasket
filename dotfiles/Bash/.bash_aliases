@@ -30,12 +30,13 @@ alias move='mv'
 alias sl='ls'
 
 ###exa specifc commands
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias l='exa -aFx --color=always --group-directories-first'
-alias lk='exa -al --color=always --group-directories-first'
+alias ls='exa -al --icons --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --icons --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --icons --color=always --group-directories-first'  # long format
+alias lt='exa -aT --icons --color=always --group-directories-first' # tree listing
+alias l='exa -aFx --icons --color=always --group-directories-first'
+alias lk='exa -alx --icons --color=always --group-directories-first'
+alias li='exa -lg --icons --color=always'
 
 ###for typos
 alias gerp='echo "You did it *again*!"; grep'
@@ -89,7 +90,7 @@ alias tilquad='tilix --session=/home/myrrdin/.tilix/quad.json'
 alias tilhalf='tilix --session=/home/myrrdin/.tilix/half.json'
 alias tilfull='tilix --session=/home/myrrdin/.tilix/full.json'
 alias tilsplit='tilix --session=/home/myrrdin/.tilix/split.json'
-alias ack-'ack -o'
+alias ack='ack -o'
 alias perfdata='sudo perf record -g -a sleep 10'
 alias perfread='sudo perf report'
 alias activeports='sudo netstat -tunlp'

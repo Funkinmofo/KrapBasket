@@ -19,4 +19,10 @@ alias clp="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo
 alias clm="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo && mach && chuck"
 alias clr="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo && colorscript random"
 
-#
+alias ls='exa -al --icons --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --icons --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --icons --color=always --group-directories-first'  # long format
+alias lt='exa -aT --icons --color=always --group-directories-first' # tree listing
+alias l='exa -aFx --icons --color=always --group-directories-first'
+alias lk='exa -alx --icons --color=always --group-directories-first'
+alias li='exa -lg --icons --color=always'
