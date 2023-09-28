@@ -27,7 +27,7 @@ conky.config = {
     extra_newline = false,
     font = 'Firacode Nerd Font Regular:size=12',
     gap_x =-412,
-    gap_y = 325,
+    gap_y = 248,
     minimum_height = 2,
     minimum_width = 2,
     net_avg_samples = 2,
@@ -66,11 +66,13 @@ ${color C55621}[${color FFA500}MEM${color}${color C55621}]$hr${color}
  ${color FFA500} $memperc%${color} ${membar 5}
  ${color FFA500} ${alignc}${mem}${color} /${memmax}
 ${color C55621}[${color FFA500}Filesys${color}${color C55621}]$hr${color}
-HD ${fs_type /}${color FFA500} i/o: ${diskio /dev/sda7}${color}
+HD ${fs_type /}${color FFA500} i/o: ${diskio /dev/sda7}${color} ${alignr}${fs_used /} of ${fs_size /}
 ${fs_used_perc /}% ${fs_bar 5 /}
 ${diskiograph /dev/sda7 50,400 b37202 6b1f0d -t}
-#${color C55621}[Swap]$hr${color}
-#${swap}${swapbar 5,100}${swapfree}/${swapmax}
+Storage ${fs_type /media/myrrdin/Storage/} ${alignr}${fs_used /media/myrrdin/Storage/} of ${fs_size /media/myrrdin/Storage/}
+${fs_used_perc /media/myrrdin/Storage/}% ${fs_bar 5 /media/myrrdin/Storage/}
+Swap  Used: ${color FFA500}${swap}${color} ${goto 200}Free: ${swapfree}/${swapmax}
+${swapperc}%${swapbar 10}
 ${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}
 Ether${goto 50}ᐁ: ${color FFA500}${downspeed eno1}${color} ${goto 200} ᐃ: ${color FFA500}${upspeed eno1}${color}${alignr}${color pink}${totaldown eno1}
 # ${alignc}${downspeedgraph eno1 10,100 FFA500 6b1f0d -t} ${color pink}${totaldown eno1}${color}
