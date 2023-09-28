@@ -27,7 +27,7 @@ conky.config = {
     extra_newline = false,
     font = 'Firacode Nerd Font Regular:size=12',
     gap_x =-412,
-    gap_y = 385,
+    gap_y = 325,
     minimum_height = 2,
     minimum_width = 2,
     net_avg_samples = 2,
@@ -53,7 +53,10 @@ own_window_transparent = false,
 }
 
 conky.text = [[
-${alignc}Kernel: ${kernel}
+${alignc}${color b37202}${nodename}${color}
+${alignc}Distro: ${distribution} ${sysname}
+${alignc}Os: ${execi 13000 cat /etc/lsb-release | grep "DISTRIB_DESCRIPTION" | sed 's/DISTRIB_DESCRIPTION=//g' | tr -d '"", '''}
+${alignc}Kernel: ${kernel} ${machine}
 Uptime: ${color FFA500} ${uptime}${color} ${alignr}Users: ${color FFA500} ${execi 13000 who | awk '{print $1}'|sort -u}${color}
 ${color C55621}[${color FFA500}CPU${color}${color C55621}]${alignr}------------------------------------------------${color C55621}[${color FFA500}${exec sensors | grep 'Package id' | awk '{print $4}' | sed 's/^.//'}${color C55621}]$color}
  ${color FFA500}  ${cpu cpu0}%${color} ${cpubar cpu0 5} 
@@ -88,7 +91,7 @@ ${top_mem name 1}${alignr}${top_mem mem 1}%
 ${top_mem name 2}${alignr}${top_mem mem 2}%
 ${top_mem name 3}${alignr}${top_mem mem 3}%
 ${color C55621}[${color FFA500}Playing${color C55621}]$hr${color}
-${execi 60 playerctl metadata --format "{{ artist }}-{{ title }}" | sed 's/./&\n/40'}
+${execi 60 playerctl metadata --format "{{ artist }}-{{ title }}" | sed 's/./&\n/46' 2>/dev/null}
 #${execi 60 chuck -n | sed 's/./&\n/50'}
 #${execi 600 who | sed 's/./&\n/50'}
 #${execi 600 networkctl | sed 's/./&\n/43'
