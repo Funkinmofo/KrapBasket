@@ -239,8 +239,8 @@ POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='235'
 
 ###sources
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
-
+#source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
+source /home/myrrdin/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 ###execute on load
 #TIMER_FORMAT='[%d]'; TIMER_PRECISION=2 ;
 bofh | lolcat
@@ -256,3 +256,6 @@ function fullgrip {
 command grep --with-filename --line-number --color=always "$1" "$2"
 
  }
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
