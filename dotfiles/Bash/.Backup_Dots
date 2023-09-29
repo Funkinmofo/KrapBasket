@@ -32,6 +32,7 @@ rsync -a -u /home/myrrdin/myrr-stats /home/myrrdin/KrapBasket/dotfiles/conky/
 rsync -a -u /home/myrrdin/Documents/minimal /home/myrrdin/KrapBasket/dotfiles/conky/
 rsync -a -u /home/myrrdin/Documents/min2 /home/myrrdin/KrapBasket/dotfiles/conky/
 rsync -a -u /home/myrrdin/Backup/leftmon /home/myrrdin/KrapBasket/dotfiles/conky/
+rsync -a -u /home/myrrdin/Backup/drac.conf /home/myrrdin/KrapBasket/dotfiles/conky/
 
 date > /home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt
 
