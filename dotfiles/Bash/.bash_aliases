@@ -37,6 +37,7 @@ alias lt='exa -aT --icons --color=always --group-directories-first' # tree listi
 alias l='exa -aFx --icons --color=always --group-directories-first'
 alias lk='exa -alx --icons --color=always --group-directories-first'
 alias li='exa -lg --icons --color=always'
+alias lc='exa -a --color=always --group-directories-first' 
 
 ###for typos
 alias gerp='echo "You did it *again*!"; grep'
