@@ -101,3 +101,5 @@ alias svcall='service --status-all'
 alias constat='netstat --inet -n'
 alias sysactive='systemctl --type=service --state=running | grep active'
 alias jorlog='journalctl --since "5 minutes ago"'
+alias hunta='sudo rkhunter --check --sk'
+
