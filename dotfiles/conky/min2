@@ -12,7 +12,7 @@
 -- https://www.lua.org/pil/contents.html
 
 conky.config = {
-    alignment = 'top_left',
+    alignment = 'top_right',
     background = true,
     border_width = 1,
     cpu_avg_samples = 2,
@@ -25,9 +25,9 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
-    font = 'Firacode Nerd Font:size=8',
-    gap_x =-210,
-    gap_y = 615,
+    font = 'Firacode Nerd Font:size=10',
+    gap_x =20,
+    gap_y = 10,
     minimum_height = 2,
     minimum_width = 2,
     net_avg_samples = 2,
@@ -46,31 +46,31 @@ conky.config = {
     uppercase = false,
     use_spacer = 'none',
     use_xft = true,
-    maximum_width = 200,
+    maximum_width = 240,
 own_window_transparent = false,
     own_window_argb_visual = true,
-    own_window_argb_value = 25,
+    own_window_argb_value = 15,
 }
 
 conky.text = [[
-${alignc}Kernel: ${kernel}
-Uptime: ${color FFA500} ${uptime}${color} ${alignr}Users: ${color FFA500} ${execi 13000 who | awk '{print $1}'|sort -u}${color}
-${color C55621}[${color FFA500}CPU${color}${color C55621}]${alignr}-------------------------------${color C55621}[${color FFA500}${exec sensors | grep 'Package id' | awk '{print $4}' | sed 's/^.//'}${color C55621}]$color}
+#${alignc}Kernel: ${kernel}
+#Uptime: ${color FFA500} ${uptime}${color} ${alignr}Users: ${color FFA500} ${execi 13000 who | awk '{print $1}'|sort -u}${color}
+${color C55621}[${color FFA500}CPU${color}${color C55621}]${alignr}${color C55621}[${color FFA500}${exec sensors | grep 'Package id' | awk '{print $4}' | sed 's/^.//'}${color C55621}]$color}
  ${color FFA500}  ${cpu cpu0}%${color} ${cpubar cpu0 5} 
 #Frequency: ${freq_g cpu0}Ghz
-#${cpugraph cpu0 10,150 FFA500 F66151 -l}
+#${cpugraph cpu0 5,150 FFA500 F66151 -l}
 ${color C55621}[${color FFA500}MEM${color}${color C55621}]$hr${color}
- ${color FFA500} $memperc%${color} ${membar 5}
  ${color FFA500} ${alignc}${mem}${color} /${memmax}
-${color C55621}[${color FFA500}Filesys${color}${color C55621}]$hr${color}
-HD ${fs_type /}${color FFA500} i/o: ${diskio /dev/sda7}${color}
-${fs_used_perc /}% ${fs_bar 5 /}
-${diskiograph /dev/sda7 20,200 b37202 6b1f0d -t}
+ ${color FFA500} $memperc%${color} ${membar 5}
+#${color C55621}[${color FFA500}Filesys${color}${color C55621}]$hr${color}
+#HD ${fs_type /}${color FFA500} i/o: ${diskio /dev/sda7}${color}
+#${fs_used_perc /}% ${fs_bar 5 /}
+#${diskiograph /dev/sda7 20,200 b37202 6b1f0d -t}
 #${color C55621}[Swap]$hr${color}
 #${swap}${swapbar 5,100}${swapfree}/${swapmax}
-${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}
-ᐁ: ${color FFA500}${downspeed eno1}${color} ${goto 80} ᐃ: ${color FFA500}${upspeed eno1}${color}${alignr}${color pink}${totaldown eno1}
+#${color C55621}[${color FFA500}Network${color}${color C55621}]$hr${color}
+#ᐁ: ${color FFA500}${downspeed eno1}${color} ${goto 80} ᐃ: ${color FFA500}${upspeed eno1}${color}${alignr}${color pink}${totaldown eno1}
 # ${alignc}${downspeedgraph eno1 10,100 FFA500 6b1f0d -t} ${color pink}${totaldown eno1}${color}
-${color}Wifi:   ${goto 35}ᐁ:${color FFA500} ${downspeed wlp3s0}${color} ${goto 100} ᐃ:${color FFA500}${upspeed wlp3s0}${color}${alignr}${color pink}${totaldown wlp3s0}
+#${color}Wifi:   ${goto 35}ᐁ:${color FFA500} ${downspeed wlp3s0}${color} ${goto 100} ᐃ:${color FFA500}${upspeed wlp3s0}${color}${alignr}${color pink}${totaldown wlp3s0}
 #${alignc}${downspeedgraph wlp3s0 10,100 FFA500 6b1f0d -t} ${color pink} ${totaldown wlp3s0}${color}
 ]]
