@@ -25,7 +25,7 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
-    font = 'Firacode Nerd Font:size=10',
+    font = 'Firacode Nerd Font:size=11',
     gap_x =20,
     gap_y = 10,
     minimum_height = 2,
@@ -62,6 +62,7 @@ ${color FFA500}  ${cpu cpu0}%${color} ${cpubar cpu0 3}
 ${color C55621}[${color FFA500}MEM${color}${color C55621}]$hr${color}
  ${color FFA500} ${alignc}${mem}${color} /${memmax}
 ${color FFA500} $memperc%${color} ${membar 3}
+${color C55621}[${color ffa500}HD${color}${color C55621}]$hr${color}
 #${color C55621}[${color FFA500}Filesys${color}${color C55621}]$hr${color}
 #HD ${fs_type /}${color FFA500} i/o: ${diskio /dev/sda7}${color}
 #${fs_used_perc /}% ${fs_bar 5 /}
