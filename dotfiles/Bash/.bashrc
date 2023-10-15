@@ -178,3 +178,4 @@ case "$PROMPT_COMMAND" in
     *) PROMPT_COMMAND="_zoxide_hook${PROMPT_COMMAND:+;${PROMPT_COMMAND}}" ;;
 esac
 export PATH=$PATH:$HOME/.cargo/bin
+. "$HOME/.cargo/env"
