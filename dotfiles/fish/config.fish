@@ -32,6 +32,7 @@ alias li='exa -lg --icons --color=always'
 alias lc='exa -a --color=always --group-directories-first' 
 alias jorlog='journalctl --since "5 minutes ago"'
 alias hunta='sudo rkhunter --check --sk'
+alias dust='dust -b'
 
 function _z_cd
     cd $argv
