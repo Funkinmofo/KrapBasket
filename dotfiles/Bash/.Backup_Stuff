@@ -7,21 +7,23 @@ rsync -a -u /home/myrrdin/Documents /media/myrrdin/Storage/Docs
 rsync -a -u /home/myrrdin/.Backup_Stuff /media/myrrdin/Storage/Bash
 rsync -a -u /home/myrrdin/.Backup_Dots /media/myrrdin/Storage/Bash
 rsync -a -u /home/myrrdin/Backup /media/myrrdin/Storage
-#rsync -a -u /home/myrrdin/Documents/skull2.txt /media/myrrdin/Storage/Backup/MyConfigs/neofetch
-#rsync -a -u /home/myrrdin/Documents/skull3.txt /media/myrrdin/Storage/Backup/MyConfigs/neofetch
-rsync -a -u /home/myrrdin/.config/audacious/config /media/myrrdin/Storage/Backup/MyConfigs/audacious
-rsync -a -u /home/myrrdin/.config/glava/bars.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava
-rsync -a -u /home/myrrdin/.config/glava/circle.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava
-rsync -a -u /home/myrrdin/.config/glava/customrad.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava
-rsync -a -u /home/myrrdin/.config/glava/radial.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava
-rsync -a -u /home/myrrdin/.config/glava/rc.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava
-rsync -a -u /home/myrrdin/.config/neofetch/config.conf /media/myrrdin/Storage/Backup/MyConfigs/neofetch
-#rsync -a -u /home/myrrdin/Documents/handycommands /media/myrrdin/Storage/Backup/MyConfigs
-rsync -a -u /home/myrrdin/.config/starship.toml /media/myrrdin/Storage/Backup/MyConfigs
+#rsync -a -u /home/myrrdin/Documents/Assorted/skull2.txt /media/myrrdin/Storage/Backup/MyConfigs/neofetch/
+#rsync -a -u /home/myrrdin/Documents/Assorted/skull3.txt /media/myrrdin/Storage/Backup/MyConfigs/neofetch/
+rsync -a -u /home/myrrdin/.config/audacious/config /media/myrrdin/Storage/Backup/MyConfigs/audacious/
+rsync -a -u /home/myrrdin/.config/glava/bars.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava/
+rsync -a -u /home/myrrdin/.config/glava/circle.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava/
+rsync -a -u /home/myrrdin/.config/glava/customrad.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava/
+rsync -a -u /home/myrrdin/.config/glava/radial.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava/
+rsync -a -u /home/myrrdin/.config/glava/rc.glsl /media/myrrdin/Storage/Backup/MyConfigs/glava/
+rsync -a -u /home/myrrdin/.config/neofetch/config.conf /media/myrrdin/Storage/Backup/MyConfigs/neofetch/
+#rsync -a -u /home/myrrdin/Documents/Assorted/handycommands /media/myrrdin/Storage/Backup/MyConfigs/
+rsync -a -u /home/myrrdin/.config/starship.toml /media/myrrdin/Storage/Backup/MyConfigs/
 rsync -a -u /home/myrrdin/.config/fish /media/myrrdin/Storage/Fish
-rsync -a -u /home/myrrdin/.config/macchina/macchina.toml /media/myrrdin/Storage/Backup/MyConfigs
-rsync -a -u /home/myrrdin/.config/macchina/themes/Hydrogen.toml /media/myrrdin/Storage/Backup/MyConfigs
+rsync -a -u /home/myrrdin/.config/macchina/macchina.toml /media/myrrdin/Storage/Backup/MyConfigs/macchina/
+rsync -a -u /home/myrrdin/.config/macchina/themes/Hydrogen.toml /media/myrrdin/Storage/Backup/MyConfigs/macchina/
 rsync -a -u /home/myrrdin/.zshrc /media/myrrdin/Storage/zsh/
+rsync -a -u /home/myrrdin/.p10k.zsh /media/myrrdin/Storage/zsh/
+rsync -a -u /home/myrrdin/.config/btop/btop.conf /media/myrrdin/Storage/Backup/MyConfigs/
 
 date > /media/myrrdin/Storage/BKUPDone.txt
 
