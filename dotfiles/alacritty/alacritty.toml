@@ -155,6 +155,7 @@ history = 5000
 dynamic_padding = false
 opacity = 1.0
 title = "Alacritty"
+#startup_mode = "Fullscreen"
 
 
 [window.class]
