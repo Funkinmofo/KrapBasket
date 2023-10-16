@@ -12,9 +12,13 @@ blue=    "#375dce"
 magenta= "#b35cd1"
 cyan=    "#5cb3d1"
 white=   "#AAAAAA"
+
 [colors.cursor]
 cursor = "#528bff"
 text = "CellBackground"
+
+[cursor]
+style = "Beam"
 
 [colors.normal]
 black=   "#1c1e1e"
