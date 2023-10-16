@@ -11,7 +11,7 @@ yellow=  "#cecc37"
 blue=    "#375dce"
 magenta= "#b35cd1"
 cyan=    "#5cb3d1"
-white=   "#edf4f7"
+white=   "#AAAAAA"
 [colors.cursor]
 cursor = "#528bff"
 text = "CellBackground"
@@ -24,11 +24,11 @@ yellow=  "#c0c91a"
 blue=    "#1a31c9"
 magenta= "#c91ac6"
 cyan=    "#4abfe2"
-white=   "#e6f1f4"
+white=   "#ffffff"
 
 [colors.primary]
 background = "0x161616"
-foreground = "#f2f4f8"
+foreground = "#bcbcbc"
 
 [colors.selection]
 background = "#3e4451"
@@ -58,7 +58,7 @@ style = "Regular"
 
 [font.offset]
 x = 0
-y = 0
+y = 1
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -151,6 +151,7 @@ history = 5000
 dynamic_padding = false
 opacity = 1.0
 title = "Alacritty"
+
 
 [window.class]
 general = "Alacritty"
