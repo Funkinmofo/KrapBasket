@@ -154,16 +154,18 @@ history = 5000
 
 #startup modes:Windowed, Maximized, Fullscreen
 [window]
-dynamic_padding = false
+dynamic_padding = true
 opacity = 1.0
 title = "Alacritty"
 startup_mode = "Windowed"
-
+decorations= "full"
 
 [window.class]
 general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 6
-y = 6
+x = 0
+y = 0
+
+
