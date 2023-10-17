@@ -23,12 +23,12 @@ style = "Beam"
 
 [colors.normal]
 black=   "#1c1e1e"
-red=     "#c91a34"
-green=   "#40c91a"
+red=     "#a3151e"
+green=   "#399320"
 yellow=  "#a5660e"
-blue=    "#1a31c9"
-magenta= "#c91ac6"
-cyan=    "#4abfe2"
+blue=    "#172aa5"
+magenta= "#9e1f9b"
+cyan=    "#2c85a0"
 white=   "#ffffff"
 
 [colors.primary]
