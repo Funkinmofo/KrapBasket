@@ -17,6 +17,7 @@ white=   "#AAAAAA"
 cursor = "#528bff"
 text = "CellBackground"
 
+#change cursor type Beam,Block,Underline
 [cursor]
 style = "Beam"
 
@@ -151,11 +152,12 @@ mods = "Shift"
 [scrolling]
 history = 5000
 
+#startup modes:Windowed, Maximized, Fullscreen
 [window]
 dynamic_padding = false
 opacity = 1.0
 title = "Alacritty"
-#startup_mode = "Fullscreen"
+startup_mode = "Windowed"
 
 
 [window.class]
