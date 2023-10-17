@@ -21,6 +21,7 @@ text = "CellBackground"
 [cursor]
 style = "Beam"
 
+
 [colors.normal]
 black=   "#1c1e1e"
 red=     "#a3151e"
@@ -30,6 +31,16 @@ blue=    "#172aa5"
 magenta= "#9e1f9b"
 cyan=    "#2c85a0"
 white=   "#ffffff"
+
+[colors.dim]
+black=   "#131415"
+red=     "#864343"
+green=   "#777c44"
+yellow=  "#9e824c"
+blue=    "#556a7d"
+magenta= "#75617b"
+cyan=    "#5b7d78"
+white=   "#828482"
 
 [colors.primary]
 background = "0x161616"
@@ -151,10 +162,11 @@ mods = "Shift"
 
 [scrolling]
 history = 5000
+multiplier = 3
 
 #startup modes:Windowed, Maximized, Fullscreen
 [window]
-dynamic_padding = true
+dynamic_padding = false
 opacity = 1.0
 title = "Alacritty"
 startup_mode = "Windowed"
@@ -165,7 +177,7 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 0
-y = 0
+x = 6
+y = 6
 
 
