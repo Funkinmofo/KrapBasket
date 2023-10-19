@@ -34,7 +34,7 @@ alias jorlog='journalctl --since "5 minutes ago"'
 alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
 alias bat='batcat'
-
+alias fd='fdfind -H'
 function _z_cd
     cd $argv
     or return $status

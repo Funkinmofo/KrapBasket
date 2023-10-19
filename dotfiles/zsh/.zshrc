@@ -202,6 +202,7 @@ alias jorlog='journalctl --since "5 minutes ago"'
 alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
 alias bat='batcat'
+alias fd='fdfind -H'
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
