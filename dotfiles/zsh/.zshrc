@@ -204,7 +204,7 @@ alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
 alias bat='batcat'
 alias fd='fdfind -H'
-alias bofh='bofh | lolcat'
+
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 ###POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
@@ -312,5 +312,5 @@ _zoxide_hook() {
 chpwd_functions=(${chpwd_functions[@]} "_zoxide_hook")
 export PATH=$PATH:$HOME/.cargo/bin
 clm
-bofh
+bofh | lolcat
 
