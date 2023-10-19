@@ -173,6 +173,7 @@ alias wipegame='cd /home/myrrdin/Apps/wipeout-rewrite-master'
 alias clm='clear; echo; echo; (seq 1 $(tput cols)) | sort -R | spark | lolcat; echo; echo && mach'
 alias clp='clear; echo; echo; (seq 1 $(tput cols)) | sort -R | spark | lolcat; echo; echo && mach && nwp'
 alias clr='clear; echo; echo; (seq 1 $(tput cols)) | sort -R | spark | lolcat; echo; echo && colorscript random && chuck | lolcat'
+alias cl='clear; echo; echo; (seq 1 $(tput cols)) | sort -R | spark | lolcat; echo; echo'
 alias reload='source ~/.zshrc'
 alias gstat='git status -u no'
 alias gcomm='git commit -m'
@@ -203,7 +204,7 @@ alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
 alias bat='batcat'
 alias fd='fdfind -H'
-
+alias bofh='bofh | lolcat'
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 ###POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
@@ -311,5 +312,5 @@ _zoxide_hook() {
 chpwd_functions=(${chpwd_functions[@]} "_zoxide_hook")
 export PATH=$PATH:$HOME/.cargo/bin
 clm
-bofh | lolcat
+bofh
 

@@ -19,6 +19,7 @@ alias clp="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo
 alias clm="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo && mach && chuck"
 alias clr="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo && colorscript -e suckless"
 alias ccl='clear && colorscript -e suckless'
+alias cl='clear; echo; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo; echo'
 
 
 ##exa specifc commands
