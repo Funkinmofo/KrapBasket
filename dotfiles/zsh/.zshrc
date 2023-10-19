@@ -312,3 +312,4 @@ chpwd_functions=(${chpwd_functions[@]} "_zoxide_hook")
 export PATH=$PATH:$HOME/.cargo/bin
 clm
 bofh | lolcat
+

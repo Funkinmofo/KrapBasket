@@ -106,3 +106,4 @@ alias dust='dust -b'
 alias bat='batcat'
 alias fd='fdfind -H'
 
+

@@ -35,6 +35,7 @@ alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
 alias bat='batcat'
 alias fd='fdfind -H'
+
 function _z_cd
     cd $argv
     or return $status
@@ -80,3 +81,4 @@ end
 function _zoxide_hook --on-variable PWD
     zoxide add (pwd -L)
 end
+
