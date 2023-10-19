@@ -70,7 +70,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete chucknorris hitchhiker bofh)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete chucknorris hitchhiker bofh sudo web-search copypath copyfile copybuffer dirhistory)
 
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
@@ -201,6 +201,7 @@ alias sysactive='systemctl --type=service --state=running | grep active'
 alias jorlog='journalctl --since "5 minutes ago"'
 alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
+alias bat='batcat'
 
 ###Powerlevel9k Stuff
 ###POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -246,7 +247,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/myrrdin/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 ###execute on load
 #TIMER_FORMAT='[%d]'; TIMER_PRECISION=2 ;
-bofh | lolcat
+
 #eval "$(starship init zsh)"
 #ps1=❱
 
@@ -308,3 +309,5 @@ _zoxide_hook() {
 
 chpwd_functions=(${chpwd_functions[@]} "_zoxide_hook")
 export PATH=$PATH:$HOME/.cargo/bin
+clm
+bofh | lolcat
