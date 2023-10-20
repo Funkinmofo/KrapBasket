@@ -1,4 +1,4 @@
-function gstat --wraps='git status -u no' --description 'alias gstat git status -u no'
-  git status -u no $argv
+function gstat --wraps='git status' --description 'alias gstat git status'
+  git status $argv
         
 end

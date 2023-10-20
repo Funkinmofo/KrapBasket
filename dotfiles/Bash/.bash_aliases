@@ -68,7 +68,7 @@ alias fg2='fg %2'
 alias fg3='fg %3'
 
 ###github
-alias gstat='git status -u no'
+alias gstat='git status'
 alias gcomm='git commit -m'
 alias gits='ssh -T git@github.com'
 alias gpush='git push'

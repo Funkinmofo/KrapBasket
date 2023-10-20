@@ -145,7 +145,6 @@ alias lc='exa -a --color=always --group-directories-first'
 alias gerp='echo "You did it *again*!"; grep'
 
 ###bash specific
-alias reload='source ~/.bashrc && source ~/.bash_aliases'
 
 ###system stuff
 alias clearmem='sync; sudo sysctl vm.drop_caches=3'
@@ -175,7 +174,7 @@ alias clp='clear; echo; echo; (seq 1 $(tput cols)) | sort -R | spark | lolcat; e
 alias clr='clear; echo; echo; (seq 1 $(tput cols)) | sort -R | spark | lolcat; echo; echo && colorscript random && chuck | lolcat'
 alias cl='clear; echo; echo; (seq 1 $(tput cols)) | sort -R | spark | lolcat; echo; echo'
 alias reload='source ~/.zshrc'
-alias gstat='git status -u no'
+alias gstat='git status'
 alias gcomm='git commit -m'
 alias gits='ssh -T git@github.com'
 alias gpush='git push'
