@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-rsync -a -u /home/myrrdin/.bashrc /home/myrrdin/KrapBasket/dotfiles/Bash/ --log-file=mylog.log
+rsync -a -u /home/myrrdin/.bashrc /home/myrrdin/KrapBasket/dotfiles/Bash/
 rsync -a -u /home/myrrdin/.bash_aliases /home/myrrdin/KrapBasket/dotfiles/Bash/
 rsync -a -u /home/myrrdin/.bash_functions /home/myrrdin/KrapBasket/dotfiles/Bash/
 rsync -a -u /home/myrrdin/.Backup_Stuff /home/myrrdin/KrapBasket/dotfiles/Bash/
