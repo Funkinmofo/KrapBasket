@@ -12,7 +12,7 @@ right_format = """
 [username]
 style_user = 'bg:#b37202 bold #21201f'
 style_root = 'bg:#b37202 bold red'
-format = '[💀$user]($style)'
+format = '[💀 $user]($style)'
 disabled = false
 show_always = true
 
@@ -294,7 +294,7 @@ disabled = false
 
 [os]
 format = "[$symbol]($style)"
-style = "bg:#b37202 bold blue"
+style = "bg:#b37202 bold yellow"
 disabled = false
 
 [os.symbols]
@@ -321,7 +321,7 @@ Macos = "🍎 "
 Manjaro = "🥭 "
 Mariner = "🌊 "
 MidnightBSD = "🌘 "
-Mint = "🌿"
+Mint = " 🌿 "
 NetBSD = "🚩 "
 NixOS = "❄️ "
 OpenBSD = "🐡 "
