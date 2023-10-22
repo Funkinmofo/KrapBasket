@@ -108,3 +108,4 @@ alias bat='batcat'
 alias fd='fdfind -H'
 
 
+alias chkdrv='df -aTh'

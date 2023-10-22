@@ -313,3 +313,4 @@ export PATH=$PATH:$HOME/.cargo/bin
 clm
 bofh | lolcat
 
+alias chkdrv='df -aTh'
