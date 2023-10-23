@@ -35,7 +35,9 @@ rsync -a -u /home/myrrdin/Backup/leftmon /home/myrrdin/KrapBasket/dotfiles/conky
 rsync -a -u /home/myrrdin/Backup/drac.conf /home/myrrdin/KrapBasket/dotfiles/conky/
 rsync -a -u /home/myrrdin/.p10k.zsh /home/myrrdin/KrapBasket/dotfiles/zsh/
 rsync -a -u /home/myrrdin/.config/alacritty/alacritty.toml /home/myrrdin/KrapBasket/dotfiles/alacritty/
-date > /home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt 
+rsync -a -u /home/myrrdin/.vimrc /home/myrrdin/KrapBasket/dotfiles/vim
+
+date >/home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt
 
 #file_name=BKUP_Done.txt
 
