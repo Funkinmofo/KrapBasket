@@ -205,7 +205,7 @@ alias dust='dust -b'
 alias bat='batcat'
 alias fd='fdfind -H'
 alias chkdrv='df -aTh'
-
+alias zshc='echo "\e[6 q"'
 # Add flags to existing aliases.
 #alias ls="${aliases[ls]:-ls} -A"
 
