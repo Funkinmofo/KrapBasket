@@ -172,7 +172,7 @@ dynamic_padding = false
 opacity = 1.0
 title = "Alacritty"
 startup_mode = "Windowed"
-decorations= "full"
+decorations= "Full"
 
 [window.class]
 general = "Alacritty"
