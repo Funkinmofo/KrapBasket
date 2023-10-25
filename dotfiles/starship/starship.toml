@@ -13,6 +13,7 @@ right_format = """
 style_user = 'bg:#b37202 bold #21201f'
 style_root = 'bg:#b37202 bold red'
 format = '[💀 $user]($style)'
+#💀
 disabled = false
 show_always = true
 
