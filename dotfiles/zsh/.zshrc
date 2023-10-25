@@ -158,6 +158,11 @@ alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 alias nvim='~/Apps/./nvim.appimage'
+alias rodu='rofi -show drun -show-icons'
+alias rowi='rofi -show window -show-icons'
+alias rofile='rofi -show filebrowser -show-icons'
+alias rokey='rofi -show keys -show-icons'
+
 
 ###convenience items
 alias aptu='sudo apt update && sudo apt upgrade'

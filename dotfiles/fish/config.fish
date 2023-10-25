@@ -36,6 +36,10 @@ alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
 alias bat='batcat'
 alias fd='fdfind -H'
+alias rodu='rofi -show drun -show-icons'
+alias rowi='rofi -show window -show-icons'
+alias rofile='rofi -show filebrowser -show-icons'
+alias rokey='rofi -show keys -show-icons'
 
 function _z_cd
     cd $argv
