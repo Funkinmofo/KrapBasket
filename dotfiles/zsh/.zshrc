@@ -162,7 +162,7 @@ alias rodu='rofi -show drun -show-icons'
 alias rowi='rofi -show window -show-icons'
 alias rofile='rofi -show filebrowser -show-icons'
 alias rokey='rofi -show keys -show-icons'
-
+alias rome="rofi -modi 'run,drun,emoji:/home/myrrdin/rofiemoji.sh' -show emoji"
 
 ###convenience items
 alias aptu='sudo apt update && sudo apt upgrade'
