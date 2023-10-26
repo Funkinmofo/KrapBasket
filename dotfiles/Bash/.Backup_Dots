@@ -41,6 +41,8 @@ rsync -a -u /home/myrrdin/rofiemoji.sh /home/myrrdin/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/.cache/emojis.txt /home/myrrdin/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/edit_list.sh /home/myrrdin/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/lolban.txt /home/myrrdin/KrapBasket/dotfiles/
+rsync -a -u /home/myrrdin/.config/rofi/config.rasi /home/myrrdin/KrapBasket/dotfiles/rofi/
+rsync -a -u /home/myrrdin/.local/share/rofi/themes /home/myrrdin/KrapBasket/dotfiles/rofi/
 
 date >/home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt
 
