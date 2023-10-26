@@ -1,9 +1,17 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_theme='one'
+" begin plugin section
+call plug#begin()
 
+Plug 'rakr/vim-one'
+Plug 'sainnhe/sonokai'
+" end plugin section
+call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -365,3 +373,4 @@ endfunction
 
 autocmd VimEnter * NERDTree
 
+colors sonokai
