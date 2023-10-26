@@ -1,6 +1,6 @@
 #1 /bin/sh
 
-chosen=$(printf "Desktop\nHalfscreen\nSplit\nQuad\nFullscreen\nBlackBox\nAlacritty" | rofi -dmenu -i '@import "/home/myrrdin/.config/rofi/config.rasi"')
+chosen=$(printf "Desktop\nHalfscreen\nSplit\nQuad\nFullscreen\nBlackBox\nAlacritty" | rofi -dmenu -p "Terminal Type" -i '@import "/home/myrrdin/.config/rofi/config.rasi"')
 
 case "$chosen" in
 "Desktop") tilix --session=/home/myrrdin/.tilix/desktopterm.json ;;
