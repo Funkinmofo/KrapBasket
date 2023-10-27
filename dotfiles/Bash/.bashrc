@@ -118,7 +118,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
 neofetch
 function set_win_title(){
     echo -ne "\033]0; $(basename "$PWD") \007"
@@ -179,3 +179,9 @@ case "$PROMPT_COMMAND" in
 esac
 export PATH=$PATH:$HOME/.cargo/bin
 . "$HOME/.cargo/env"
+
+##-----------------------------------------------------
+## synth-shell-prompt.sh
+if [ -f /home/myrrdin/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source /home/myrrdin/.config/synth-shell/synth-shell-prompt.sh
+fi
