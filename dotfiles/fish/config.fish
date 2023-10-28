@@ -42,6 +42,7 @@ alias rofile='rofi -show filebrowser -show-icons'
 alias rokey='rofi -show keys -show-icons'
 alias rome="rofi -modi 'run,drun,emoji:/home/myrrdin/rofiemoji.sh' -show emoji"
 alias lolban='/home/myrrdin/lolban.txt'
+alias vimcom="cat /home/myrrdin/vim-commands | rofi -p "Vim-Commands" -theme arthur -dmenu -mesg ''"
 
 function _z_cd
     cd $argv
