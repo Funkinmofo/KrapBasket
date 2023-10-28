@@ -1,16 +1,16 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-set fish_greeting
-###ALIASES
-eval (thefuck --alias | tr '\n' ';')
-starship init fish | source
-mach
+    set fish_greeting
+    ###ALIASES
+    eval (thefuck --alias | tr '\n' ';')
+    starship init fish | source
+    mach
 
-#function fish_right_prompt 
- #  set_color brcyan -i
-# command echo (playerctl metadata --format {{ title }}🎶) 
+    #function fish_right_prompt 
+    #  set_color brcyan -i
+    # command echo (playerctl metadata --format {{ title }}🎶) 
 
- #end
+    #end
 end
 
 
@@ -24,13 +24,13 @@ alias cl='clear; echo; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo
 
 ##exa specifc commands
 alias ls='exa -al --icons --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --icons --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --icons --color=always --group-directories-first'  # long format
+alias la='exa -a --icons --color=always --group-directories-first' # all files and dirs
+alias ll='exa -l --icons --color=always --group-directories-first' # long format
 alias lt='exa -aT --icons --color=always --group-directories-first' # tree listing
 alias l='exa -aFx --icons --color=always --group-directories-first'
 alias lk='exa -alx --icons --color=always --group-directories-first'
 alias li='exa -lg --icons --color=always'
-alias lc='exa -a --color=always --group-directories-first' 
+alias lc='exa -a --color=always --group-directories-first'
 alias jorlog='journalctl --since "5 minutes ago"'
 alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
@@ -49,7 +49,7 @@ function _z_cd
 
     commandline -f repaint
 
-    if test "$_ZO_ECHO" = "1"
+    if test "$_ZO_ECHO" = 1
         echo $PWD
     end
 end
@@ -59,7 +59,9 @@ function z
 
     if test $argc -eq 0
         _z_cd $HOME
-    else if begin; test $argc -eq 1; and test $argv[1] = '-'; end
+    else if begin
+            test $argc -eq 1; and test $argv[1] = -
+        end
         _z_cd -
     else
         set -l _zoxide_result (zoxide query -- $argv)
@@ -91,3 +93,12 @@ end
 
 
 alias chkdrv='df -aTh'
+
+###abbr
+abbr -a dwn 'cd /home/myrrdin/Downloads'
+abbr -a doc 'cd /home/myrrdin/Documents'
+abbr -a q exit
+abbr -a .... 'cd .. && cd .. && cd .. && cd ..'
+abbr -a stor 'cd /media/myrrdin/Storage'
+abbr -a krap 'cd /home/myrrdin/KrapBasket'
+abbr lp 'exa -abghHliS'
