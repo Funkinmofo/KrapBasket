@@ -406,7 +406,8 @@ let g:airline_theme='distinguished'
 let g:Powerline_symbols = 'fancy'
 "set fillchars+=stl:\ ,stlnc:\
 
-autocmd VimEnter * NERDTree
-
+"autocmd VimEnter * NERDTree
+let mapleader = ","
+nmap <leader>ne :NERDTreeToggle<cr>
 
 colors sonokai

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 myTerm=alacritty
-myEdit=nano
+myEdit=vim
 
 menu(){
 	printf "1. alacritty\n"
