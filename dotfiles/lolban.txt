@@ -1,2 +1,2 @@
 #!/bin/bash
-toilet -f 3d "$1" | lolcat
+toilet -tf 3d "$1" | lolcat

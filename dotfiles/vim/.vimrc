@@ -411,3 +411,4 @@ let mapleader = ","
 nmap <leader>ne :NERDTreeToggle<cr>
 
 colors sonokai
+set colorcolumn=80
