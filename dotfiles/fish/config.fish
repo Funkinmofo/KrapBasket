@@ -43,6 +43,10 @@ alias rokey='rofi -show keys -show-icons'
 alias rome="rofi -modi 'run,drun,emoji:/home/myrrdin/rofiemoji.sh' -show emoji"
 alias lolban='/home/myrrdin/lolban.txt'
 alias vimcom="cat /home/myrrdin/vim-commands | rofi -p "Vim-Commands" -theme arthur -dmenu -mesg ''"
+alias nalau='sudo nala update && sudo nala upgrade'
+alias nalad='sudo SKIP_AUTOSNAP= nala update'
+alias nalag='sudo SKIP_AUTOSNAP= nala upgrade'
+alias nalar='sudo SKIP_AUTOSNAP= nala remove'
 
 function _z_cd
     cd $argv
