@@ -4,9 +4,12 @@ let g:airline_theme='one'
 call plug#begin()
 
 Plug 'rakr/vim-one'
+Plug 'Lokaltog/vim-powerline'
 Plug 'sainnhe/sonokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter'
 " end plugin section
 call plug#end()
 
@@ -149,7 +152,7 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
-
+set guifont=JetBrainsMonoNerdFont\ 12
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -400,6 +403,10 @@ let g:airline_skip_empty_sections = 1
 let g:airline_theme='distinguished'
 
 """endfunction
+let g:Powerline_symbols = 'fancy'
+"set fillchars+=stl:\ ,stlnc:\
+
 autocmd VimEnter * NERDTree
+
 
 colors sonokai
