@@ -1,6 +1,6 @@
 #1 /bin/sh
 
-chosen=$(printf "Desktop\nHalfscreen\nSplit\nQuad\nFullscreen\nBlackBox\nAlacritty" | rofi -dmenu -p "Terminal Type" -i '@import "/home/myrrdin/.config/rofi/config.rasi"')
+chosen=$(printf "Desktop\nHalfscreen\nSplit\nQuad\nFullscreen\nBlackBox\nAlacritty\nKitty" | rofi -dmenu -p "Terminal Type" -i '@import "/home/myrrdin/.config/rofi/config.rasi"')
 
 case "$chosen" in
 "Desktop") tilix --session=/home/myrrdin/.tilix/desktopterm.json ;;
@@ -10,5 +10,6 @@ case "$chosen" in
 "Fullscreen") tilix --session=/home/myrrdin/.tilix/full.json ;;
 "Alacritty") alacritty --config-file /home/myrrdin/.config/alacritty/alacfull.toml ;;
 "BlackBox") /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=blackbox com.raggesilver.BlackBox ;;
+"Kitty") /home/myrrdin/.local/kitty.app/bin/kitty --start-as fullscreen ;;  
 *) exit 1 ;;
 esac
