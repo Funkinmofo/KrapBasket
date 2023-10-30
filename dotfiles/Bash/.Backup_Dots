@@ -35,7 +35,7 @@ rsync -a -u /home/myrrdin/Backup/leftmon /home/myrrdin/KrapBasket/dotfiles/conky
 rsync -a -u /home/myrrdin/Backup/drac.conf /home/myrrdin/KrapBasket/dotfiles/conky/
 rsync -a -u /home/myrrdin/.p10k.zsh /home/myrrdin/KrapBasket/dotfiles/zsh/
 rsync -a -u /home/myrrdin/.config/alacritty/alacritty.toml /home/myrrdin/KrapBasket/dotfiles/alacritty/
-rsync -a -u /home/myrrdin/.vimrc /home/myrrdin/KrapBasket/dotfiles/vim
+#rsync -a -u /home/myrrdin/.vimrc /home/myrrdin/KrapBasket/dotfiles/vim
 rsync -a -u /home/myrrdin/tilscreen.sh /home/myrrdin/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/rofiemoji.sh /home/myrrdin/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/.cache/emojis.txt /home/myrrdin/KrapBasket/dotfiles/
