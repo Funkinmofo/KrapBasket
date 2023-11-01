@@ -43,6 +43,9 @@ rsync -a -u /home/myrrdin/edit_list.sh /home/myrrdin/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/lolban.txt /home/myrrdin/KrapBasket/dotfiles/
 rsync -a -u /home/myrrdin/.config/rofi/config.rasi /home/myrrdin/KrapBasket/dotfiles/rofi/
 rsync -a -u /home/myrrdin/.local/share/rofi/themes /home/myrrdin/KrapBasket/dotfiles/rofi/
+rsync -a -u /home/myrrdin/.config/vifm/vifmrc /home/myrrdin/KrapBasket/dotfiles/vifm/
+rsync -a -u /home/myrrdin/.SpaceVim.d/init.toml /home/myrrdin/KrapBasket/dotfiles/spacevim/
+
 
 date >/home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt
 
