@@ -47,6 +47,8 @@ alias nalau='sudo nala update && sudo nala upgrade'
 alias nalad='sudo SKIP_AUTOSNAP= nala update'
 alias nalag='sudo SKIP_AUTOSNAP= nala upgrade'
 alias nalar='sudo SKIP_AUTOSNAP= nala remove'
+alias kd='cd /home/myrrdin/KrapBasket/dotfiles/'
+alias stor='cd /media/myrrdin/Storage/'
 
 function _z_cd
     cd $argv

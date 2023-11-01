@@ -116,5 +116,6 @@ alias hunta='sudo rkhunter --check --sk'
 alias dust='dust -b'
 alias bat='batcat'
 alias fd='fdfind -H'
-
+alias kd='cd /home/myrrdin/KrapBasket/dotfiles/'
+alias stor='cd /media/myrrdin/Storage'
 alias chkdrv='df -aTh'
