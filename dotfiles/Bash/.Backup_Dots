@@ -45,6 +45,7 @@ rsync -a -u /home/myrrdin/.config/rofi/config.rasi /home/myrrdin/KrapBasket/dotf
 rsync -a -u /home/myrrdin/.local/share/rofi/themes /home/myrrdin/KrapBasket/dotfiles/rofi/
 rsync -a -u /home/myrrdin/.config/vifm/vifmrc /home/myrrdin/KrapBasket/dotfiles/vifm/
 rsync -a -u /home/myrrdin/.SpaceVim.d/init.toml /home/myrrdin/KrapBasket/dotfiles/spacevim/
+rsync -a -u /home/myrrdin/.SpaceVim/vimrc /home/myrrdin/KrapBasket/dotfiles/spacevim/
 
 
 date >/home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt
