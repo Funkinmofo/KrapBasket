@@ -213,6 +213,7 @@ alias chkdrv='df -aTh'
 alias zshc='echo "\e[6 q"'
 alias kd='cd /home/myrrdin/KrapBasket/dotfiles'
 alias stor='cd /media/myrrdin/Storage'
+alias rmdir='rm -v -I -r'
 
 # Add flags to existing aliases.
 #alias ls="${aliases[ls]:-ls} -A"

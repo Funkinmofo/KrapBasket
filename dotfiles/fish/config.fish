@@ -49,7 +49,7 @@ alias nalag='sudo SKIP_AUTOSNAP= nala upgrade'
 alias nalar='sudo SKIP_AUTOSNAP= nala remove'
 alias kd='cd /home/myrrdin/KrapBasket/dotfiles/'
 alias stor='cd /media/myrrdin/Storage/'
-
+alias rmdir='rm -v -I -r'
 function _z_cd
     cd $argv
     or return $status
