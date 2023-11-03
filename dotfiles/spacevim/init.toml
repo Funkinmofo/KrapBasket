@@ -70,4 +70,6 @@ repo = 'scrooloose/nerdcommenter'
 repo = 'khaveesh/vim-fish-syntax'
 repo = 'sainnhe/sonokai'
 repo = 'ryanoasis/vim-devicons'
+repo = 'amadeus/vim-css'
+repo = "Fymyte/rasi.vim"
 
