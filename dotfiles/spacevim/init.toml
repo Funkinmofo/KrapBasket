@@ -48,7 +48,8 @@
 #   ]
 #automatic_update = true
 # Enable autocomplete layer
-
+[[layers]]
+#name = "colorscheme"
 [[layers]]
 name = 'autocomplete'
 auto_completion_return_key_behavior = "complete"
@@ -72,4 +73,9 @@ repo = 'sainnhe/sonokai'
 repo = 'ryanoasis/vim-devicons'
 repo = 'amadeus/vim-css'
 repo = "Fymyte/rasi.vim"
-
+repo = 'ghifarit53/tokyonight-vim'
+#repo = 'sainnhe/artify.vim'
+#repo = 'rmolin88/pomodoro.vim'
+#repo = 'neoclide/coc.nvim', {'branch': 'release'}
+#repo = 'albertomontesg/lightline-asyncrun'
+#repo = 'itchyny/lightline.vim'
