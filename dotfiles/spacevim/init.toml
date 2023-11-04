@@ -74,8 +74,4 @@ repo = 'ryanoasis/vim-devicons'
 repo = 'amadeus/vim-css'
 repo = "Fymyte/rasi.vim"
 repo = 'ghifarit53/tokyonight-vim'
-#repo = 'sainnhe/artify.vim'
-#repo = 'rmolin88/pomodoro.vim'
-#repo = 'neoclide/coc.nvim', {'branch': 'release'}
-#repo = 'albertomontesg/lightline-asyncrun'
-#repo = 'itchyny/lightline.vim'
+
