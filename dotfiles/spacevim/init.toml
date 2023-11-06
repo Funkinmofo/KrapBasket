@@ -74,4 +74,7 @@ repo = 'ryanoasis/vim-devicons'
 repo = 'amadeus/vim-css'
 repo = "Fymyte/rasi.vim"
 repo = 'ghifarit53/tokyonight-vim'
+repo = "ap/vim-css-color"
+#repo = 'vim-airline/vim-airline-themes'
 
+#repo = 'vim-airline/vim-airline'
