@@ -74,10 +74,10 @@ set norunexec
 colorscheme zenburn 
 
 " Format for displaying time in file list. For example:
-" TIME_STAMP_FORMAT=%m/%d-%H:%M
+"" TIME_STAMP_FORMAT=%m/%d-%I:%M %p
 " See man date or man strftime for details.
 
-set timefmt=%m/%d\ %H:%M
+set timefmt=%m/%d\ %I:%M%P 
 
 " Show list of matches on tab completion in command-line mode
 
