@@ -8,7 +8,7 @@
 
 # All SpaceVim option below [option] section
 [options]
-# bootstrap_before = 'myspacevim#before'
+ bootstrap_before = 'myspacevim#before'
 #   bootstrap_after = 'myspacevim#after'
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
@@ -64,17 +64,30 @@ default_height = 30
 repo = 'https://github.com/vifm/vifm.vim'
 merged = false
 repo = 'lifepillar/vim-colortemplate'
+merged = false
 repo = 'scrooloose/nerdtree'
+merged = false
 repo = 'tiagofumo/vim-nerdtree-syntax-highlight'
+merged = false
 repo = 'Xuyuanp/nerdtree-git-plugin'
+merged = false
 repo = 'scrooloose/nerdcommenter'
+merged = false
 repo = 'khaveesh/vim-fish-syntax'
+merged = false
 repo = 'sainnhe/sonokai'
+merged = false
 repo = 'ryanoasis/vim-devicons'
+merged = false
 repo = 'amadeus/vim-css'
+merged = false
 repo = "Fymyte/rasi.vim"
+merged = false
 repo = 'ghifarit53/tokyonight-vim'
+merged = false
 repo = "ap/vim-css-color"
+merged = false
 #repo = 'vim-airline/vim-airline-themes'
-
+#merged = false
 #repo = 'vim-airline/vim-airline'
+#merged = false
