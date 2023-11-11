@@ -17,8 +17,8 @@ end
 ###Aliases
 alias clp="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo && mach && nwp"
 alias clm="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo && mach && chuck"
-alias clr="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo && colorscript -e suckless"
-alias ccl='clear && colorscript -e suckless'
+alias clr="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo && /home/myrrdin/shell-color-scripts/colorscripts/./kip"
+alias ccl='clear &&  /home/myrrdin/shell-color-scripts/colorscripts/./kip'
 alias cl='clear; echo; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo; echo'
 
 
