@@ -119,7 +119,7 @@ if ! shopt -oq posix; then
   fi
 fi
 eval "$(starship init bash)"
-neofetch
+#neofetch
 function set_win_title(){
     echo -ne "\033]0; $(basename "$PWD") \007"
 }
@@ -187,3 +187,10 @@ if [ -f /home/myrrdin/.config/synth-shell/synth-shell-prompt.sh ] && [ -n "$( ec
 fi
 
 #TIMER_FORMAT='[%d]'; TIMER_PRECISION=2 ;
+
+
+##-----------------------------------------------------
+## synth-shell-greeter.sh
+if [ -f /home/myrrdin/.config/synth-shell/synth-shell-greeter.sh ] && [ -n "$( echo $- | grep i )" ]; then
+	source /home/myrrdin/.config/synth-shell/synth-shell-greeter.sh
+fi
