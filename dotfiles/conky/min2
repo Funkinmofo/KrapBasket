@@ -64,7 +64,7 @@ ${color C55621}[${color FFA500}MEM${color}${color C55621}]$hr${color}
 ${color FFA500} $memperc%${color} ${membar 3}
 ${color C55621}[${color ffa500}HD${color}${color C55621}]$hr${color}
 #${color C55621}[${color FFA500}Filesys${color}${color C55621}]$hr${color}
-HD ${fs_type /}${color FFA500} ${alignr}${diskio /dev/sda7}${color}
+I/O:${color FFA500} ${alignr}${diskio /dev/sda7}${color}
 #${fs_used_perc /}% ${fs_bar 5 /}
 ${diskiograph /dev/sda7 30,200 b37202 6b1f0d -t}
 #${color C55621}[Swap]$hr${color}
