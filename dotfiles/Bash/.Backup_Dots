@@ -49,6 +49,7 @@ rsync -a -u /home/myrrdin/.SpaceVim/vimrc /home/myrrdin/KrapBasket/dotfiles/spac
 rsync -a -u /home/myrrdin/.newsboat/urls /home/myrrdin/KrapBasket/dotfiles/newsboat/
 rsync -a -u /home/myrrdin/.newsboat/config /home/myrrdin/KrapBasket/dotfiles/newsboat/
 rsync -a -u /home/myrrdin/.config/synth-shell /home/myrrdin/KrapBasket/dotfiles/synth-shell/
+rsync -a -u /home/myrrdin/Documents/mingreen /home/myrrdin/KrapBasket/dotfiles/conky/
 
 date >/home/myrrdin/KrapBasket/dotfiles/BKUPComplete.txt
 

@@ -1,0 +1,77 @@
+-- Conky, a system monitor https://github.com/brndnmtthws/conky
+--
+-- This configuration file is Lua code. You can write code in here, and it will
+-- execute when Conky loads. You can use it to generate your own advanced
+-- configurations.
+--
+-- Try this (remove the `--`):
+--
+--   print("Loading Conky config")
+--
+-- For more on Lua, see:
+-- https://www.lua.org/pil/contents.html
+
+conky.config = {
+    alignment = 'top_right',
+    background = true,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = '1fa31d',
+    default_outline_color = 'green',
+    default_shade_color = 'white',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'Firacode Nerd Font:size=11',
+    gap_x =15,
+    gap_y = 15,
+    minimum_height = 2,
+    minimum_width = 2,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+    maximum_width = 500,
+own_window_transparent = false,
+    own_window_argb_visual = true,
+    own_window_argb_value = 15,
+}
+
+conky.text = [[
+#${alignc}Kernel: ${kernel}
+#Uptime: ${color 87b596} ${uptime}${color} ${alignr}Users: ${color 87b596} ${execi 13000 who | awk '{print $1}'|sort -u}${color}
+${color 21c42e}[${color 87b596}CPU${color}${color 21c42e}]${alignr}${color 21c42e}[${color 87b596}${exec sensors | grep 'Package id' | awk '{print $4}' | sed 's/^.//'}${color 21c42e}]$color}
+${color 87b596}  ${cpu cpu0}%${color} ${cpubar cpu0 3} 
+#Frequency: ${freq_g cpu0}Ghz
+#${cpugraph cpu0 5,150 87b596 F66151 -l}
+${color 21c42e}[${color 87b596}MEM${color}${color 21c42e}]$hr${color}
+ ${color 87b596} ${alignc}${mem}${color} /${memmax}
+${color 87b596} $memperc%${color} ${membar 3}
+${color 21c42e}[${color 87b596}HD${color}${color 21c42e}]$hr${color}
+#${color 21c42e}[${color 87b596}Filesys${color}${color 21c42e}]$hr${color}
+I/O:${color 87b596} ${alignr}${diskio /dev/sda7}${color}
+#${fs_used_perc /}% ${fs_bar 5 /}
+${diskiograph /dev/sda7 30,200 01b219 87b596 -t}
+#${color 21c42e}[Swap]$hr${color}
+#${swap}${swapbar 5,100}${swapfree}/${swapmax}
+#${color 21c42e}[${color 87b596}Network${color}${color 21c42e}]$hr${color}
+#ᐁ: ${color 87b596}${downspeed eno1}${color} ${goto 80} ᐃ: ${color 87b596}${upspeed eno1}${color}${alignr}${color pink}${totaldown eno1}
+# ${alignc}${downspeedgraph eno1 10,100 87b596 6b1f0d -t} ${color pink}${totaldown eno1}${color}
+#${color}Wifi:   ${goto 35}ᐁ:${color 87b596} ${downspeed wlp3s0}${color} ${goto 100} ᐃ:${color 87b596}${upspeed wlp3s0}${color}${alignr}${color pink}${totaldown wlp3s0}
+#${alignc}${downspeedgraph wlp3s0 10,100 87b596 6b1f0d -t} ${color pink} ${totaldown wlp3s0}${color}
+]]
