@@ -215,6 +215,7 @@ alias kd='cd /home/myrrdin/KrapBasket/dotfiles'
 alias stor='cd /media/myrrdin/Storage'
 alias rmdir='rm -v -I -r'
 alias kip='/home/myrrdin/shell-color-scripts/colorscripts/./kip'
+alias memchk='vmstat -s'
 
 # Add flags to existing aliases.
 #alias ls="${aliases[ls]:-ls} -A"

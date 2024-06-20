@@ -101,6 +101,8 @@ end
 
 
 alias chkdrv='df -aTh'
+alias memchk='vmstat -s'
+
 
 ###abbr
 abbr -a dwn 'cd /home/myrrdin/Downloads'

@@ -79,6 +79,7 @@ alias gcomm='git commit -m'
 alias gits='ssh -T git@github.com'
 alias gpush='git push'
 alias gadd='git add'
+alias memchk='vmstat -s'
 
 ###convenience items
 alias aptu='sudo apt update && sudo apt upgrade'
